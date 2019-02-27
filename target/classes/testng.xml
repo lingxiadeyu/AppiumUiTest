@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="执行移动端测试用例">
+    <test name="执行移动端测试用例">
+        <classes>
+            <class name="com.meituan.HomePageTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.meituan.Util.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

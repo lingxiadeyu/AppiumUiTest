@@ -1,0 +1,6 @@
+#---------------------------HomePage首页--------------------
+bannerid : "com.sankuai.meituan:id/mtadvert_ad_view"
+serviceball : "美食"
+serviceballtwo : "电影/演出"
+#---------------------------ListItemPage美食列表页--------------------
+startelement : "虾吃虾涮（安贞店）"

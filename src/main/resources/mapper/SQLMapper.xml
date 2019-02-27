@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yixin.model">
+    <!--获取element_detail表中数据 navigationbar-->
+    <select id="Getelementbyname" parameterType="Integer" resultType="String">
+            select by_name from element_detail where id=#{id}
+    </select>
+    <!--element_name相同，by_name不相同，返回是list-->
+    <select id="GetElementByName" parameterType="String" resultType="String">
+            select by_name from element_detail where element_name=#{element_name};
+    </select>
+    <select id="GetElementbyxpath" parameterType="String" resultType="String">
+            select by_xpath from element_detail where element_name=#{element_name};
+    </select>
+    <select id="GetElements" parameterType="String" resultType="com.yixin.model.ElementDetail">
+            select by_name,by_xpath,by_classname,by_resourceid,contextdesc,indexs,x_end_point,x_start_point,y_end_point,y_start_point from element_detail where element_name=#{element_name};
+    </select>
+
+
+</mapper>
