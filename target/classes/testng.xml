@@ -3,7 +3,6 @@
     <test name="执行移动端美团测试用例">
         <classes>
             <class name="com.meituan.HomePageTest"/>
-            <class name="com.meituan.MeiShiPageTest"/>
         </classes>
     </test>
     <listeners>
