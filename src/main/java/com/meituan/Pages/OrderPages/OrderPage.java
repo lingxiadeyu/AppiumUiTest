@@ -24,15 +24,15 @@ public class OrderPage {
     public String titleid = "com.sankuai.meituan:id/order_title";
 
     //待付款
-    public String unpaidorder = "com.sankuai.meituan:id/image_unpaid_order";
+    public String ordertabunpaidid = "com.sankuai.meituan:id/order_tab_unpaid";
     //待使用
-    public String unusedid = "com.sankuai.meituan:id/image_unused";
+    public String ordertabunusedid = "com.sankuai.meituan:id/order_tab_unused";
     //待评价
-    public String feedbackid = "com.sankuai.meituan:id/image_feedback";
+    public String ordertabneedfeedbackid = "com.sankuai.meituan:id/order_tab_need_feedback";
     //退款/售后
-    public String refundid = "com.sankuai.meituan:id/image_refund";
+    public String ordertabrefundid = "com.sankuai.meituan:id/order_tab_refund";
     //全部订单
-    public String allorderid = "com.sankuai.meituan:id/image_order";
+    public String ordertaballid = "com.sankuai.meituan:id/order_tab_all";
 
 
     //评价按钮

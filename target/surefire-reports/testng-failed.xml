@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [执行移动端美团测试用例]">
+  <listeners>
+    <listener class-name="com.meituan.Util.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="执行移动端美团测试用例">
+    <classes>
+      <class name="com.meituan.HomePageTest"/>
+      <class name="com.meituan.MeiShiPageTest"/>
+    </classes>
+  </test> <!-- 执行移动端美团测试用例 -->
+  <test name="执行移动端美团测试用例(failed)">
+    <classes>
+      <class name="com.meituan.HomePageTest">
+        <methods>
+          <include name="test020"/>
+          <include name="teardown"/>
+          <include name="AndroidSettings"/>
+          <include name="test019"/>
+          <include name="test014"/>
+        </methods>
+      </class> <!-- com.meituan.HomePageTest -->
+      <class name="com.meituan.MeiShiPageTest">
+        <methods>
+          <include name="test022" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="AndroidSettings"/>
+          <include name="test034" invocation-numbers="0 1 3"/>
+        </methods>
+      </class> <!-- com.meituan.MeiShiPageTest -->
+    </classes>
+  </test> <!-- 执行移动端美团测试用例(failed) -->
+</suite> <!-- Failed suite [执行移动端美团测试用例] -->

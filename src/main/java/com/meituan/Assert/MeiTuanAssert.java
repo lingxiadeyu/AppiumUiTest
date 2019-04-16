@@ -6,6 +6,8 @@ import com.meituan.Pages.HomePages.HomePage;
 import com.meituan.Pages.HomePages.SearchMerchantPage;
 import com.meituan.Pages.MainPages.MainPage;
 import com.meituan.Pages.MainPages.SettingPage;
+import com.meituan.Pages.MeiShiPages.MeiShiHomePage;
+import com.meituan.Pages.MeiShiPages.MeiShiMerchantDetailPage;
 import com.meituan.Pages.OrderPages.EvaluatePage;
 import com.meituan.Pages.MainPages.LoginPage;
 import com.meituan.Pages.OrderPages.OrderPage;
@@ -29,6 +31,8 @@ public class MeiTuanAssert {
     public OrderPage orderPage;//我的订单页面
     public EvaluatePage evaluatePage;//评价页面
     public RefundPage refundPage;//退款页面
+    public MeiShiHomePage meiShiHomePage;//美食业务--首页
+    public MeiShiMerchantDetailPage meiShiMerchantDetailPage;//美食业务--门店详情页
     public Action action;//所有操作
     public ElementSource elementSource;//从yaml中获取资源信息
 
@@ -45,6 +49,8 @@ public class MeiTuanAssert {
         orderPage = new OrderPage(driver);
         evaluatePage = new EvaluatePage(driver);
         refundPage = new RefundPage(driver);
+        meiShiHomePage = new MeiShiHomePage(driver);
+        meiShiMerchantDetailPage = new MeiShiMerchantDetailPage(driver);
         action = new Action(driver);
         elementSource = new ElementSource();
 

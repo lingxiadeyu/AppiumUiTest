@@ -1,0 +1,98 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 34, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 2,869.547 sec <<< FAILURE!
+test014(com.meituan.HomePageTest)  Time elapsed: 44.475 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.meituan.HomePageTest.test014(HomePageTest.java:402)
+
+test019(com.meituan.HomePageTest)  Time elapsed: 75.19 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.97 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-08IDGDC', ip: '192.168.215.2', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.sankuai.meituan, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=edaed87d, platform=LINUX, appActivity=com.meituan.android.pt.homepage.activity.MainActivity, desired={appPackage=com.sankuai.meituan, appActivity=com.meituan.android.pt.homepage.activity.MainActivity, noReset=true, platformVersion=6.0.1, unicodeKeyboard=true, platformName=Android, deviceName=edaed87d, resetKeyboard=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
+Session ID: 5304cb1b-ecef-4b44-806b-b2b1f68f193a
+*** Element info: {Using=id, value=com.sankuai.meituan:id/order_detail_title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:47)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.meituan.Util.Action.gettext(Action.java:354)
+	at com.meituan.HomePageTest.test019(HomePageTest.java:601)
+
+test020(com.meituan.HomePageTest)  Time elapsed: 2.058 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'DESKTOP-08IDGDC', ip: '192.168.215.2', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.sankuai.meituan, networkConnectionEnabled=true, noReset=true, warnings={}, databaseEnabled=false, deviceName=edaed87d, platform=LINUX, appActivity=com.meituan.android.pt.homepage.activity.MainActivity, desired={appPackage=com.sankuai.meituan, appActivity=com.meituan.android.pt.homepage.activity.MainActivity, noReset=true, platformVersion=6.0.1, unicodeKeyboard=true, platformName=Android, deviceName=edaed87d, resetKeyboard=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
+Session ID: fb95a71b-6ca2-4a09-81f7-e817d5b152cc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:27)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:380)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:302)
+	at io.appium.java_client.AppiumDriver.swipe(AppiumDriver.java:435)
+	at com.meituan.Util.Action.Swipe(Action.java:177)
+	at com.meituan.HomePageTest.test020(HomePageTest.java:622)
+
+test022(com.meituan.MeiShiPageTest)  Time elapsed: 63.006 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.meituan.MeiShiPageTest.test022(MeiShiPageTest.java:80)
+
+test034(com.meituan.MeiShiPageTest)  Time elapsed: 89.748 sec  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "去结算"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at com.meituan.MeiShiPageTest.test034(MeiShiPageTest.java:988)
+
+test034(com.meituan.MeiShiPageTest)  Time elapsed: 76.774 sec  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "去结算"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at com.meituan.MeiShiPageTest.test034(MeiShiPageTest.java:988)
+
+test034(com.meituan.MeiShiPageTest)  Time elapsed: 101.293 sec  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "去结算"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at com.meituan.MeiShiPageTest.test034(MeiShiPageTest.java:988)
+

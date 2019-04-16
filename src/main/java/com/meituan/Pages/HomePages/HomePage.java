@@ -21,6 +21,8 @@ public class HomePage extends PageBase {
 
     //定位城市
     public String citynameid = "com.sankuai.meituan:id/city_name";
+    //首页天气元素
+    public String weatherdescribeid = "com.sankuai.meituan:id/weather_describe";
 
     //搜索框,点击后跳转到搜索页面
     public String searchlayoutid = "com.sankuai.meituan:id/search_layout";
@@ -53,6 +55,8 @@ public class HomePage extends PageBase {
     //获取门店名称resourceid
     public String getmerchanttitleid = "com.sankuai.meituan:id/title";
 
+    //获取门店resourceid并点击
+    public String dynamiccontainerid = "com.sankuai.meituan:id/dynamic_container";
 
 
     //从yaml文件中获取数据信息

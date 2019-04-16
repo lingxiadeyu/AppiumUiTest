@@ -1,22 +1,19 @@
 package com.meituan;
-import com.lowagie.text.DocumentException;
-import com.meituan.Business.MeiTuanBusiness;
+import com.meituan.Util.GetDataProvider;
 import com.meituan.Util.TestSuite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class HomePageTest extends TestSuite {
-
-
 
     /*
     测试编号:001
@@ -26,7 +23,7 @@ public class HomePageTest extends TestSuite {
     @Test(description = "切换城市--选择热门城市")
     public void test001() throws InterruptedException, IOException {
         //第一个执行的用例需要先做上滑操作，这样才能解锁手机，当然第一个用例需要是不依赖上滑操作的用例，如果依赖，上滑后可能找不到元素。
-        action.Swipe(1,1);
+//        action.Swipe(1,1);
 
         //先点击切换城市
         action.click(By.id(homePage.citynameid));
@@ -80,15 +77,19 @@ public class HomePageTest extends TestSuite {
     预期结果：判断切换后的城市是选择的城市
      */
     @Test(description = "切换城市--选择指定城市")
-    public void test003() throws InterruptedException {
+    public void test003() throws InterruptedException, IOException {
         //先点击切换城市
         action.click(By.id(homePage.citynameid));
         Thread.sleep(1000);
         //先滑动页面，滑动一次
         action.Swipe(1, 1);
         Thread.sleep(1000);
-        //点击右侧定位热门城市坐标,选择Z字母
-        action.tap(1, 1075, 1770, 500);
+        //点击右侧定位热门城市坐标,选择Z字母,换了手机可能就不会准确，要根据屏幕大小点击，要优化
+        int width = driver.manage().window().getSize().width;
+        int heigh = driver.manage().window().getSize().height;
+        System.out.println(width+";"+heigh);
+        action.tap(1, width-80, heigh-20, 500);
+
         //到了Z开头的页面，选择第一个城市
         List<WebElement> citylisttextview = citynamePage.citylisttextview();
         String citylisttext = citylisttextview.get(1).getText();
@@ -97,7 +98,8 @@ public class HomePageTest extends TestSuite {
         //点击城市
         citylisttextview.get(1).click();
         Thread.sleep(1000);
-
+        //测试截图
+        action.Screenshot("测试编号003");
         //判断选择的城市信息正确
         Assert.assertEquals(action.gettext(By.id(homePage.citynameid)), citylisttext);
     }
@@ -107,12 +109,12 @@ public class HomePageTest extends TestSuite {
     测试场景：切换城市--搜索指定城市
     预期结果：点击搜索出的城市判断城市正确
      */
-    @Test(description = "切换城市--搜索指定城市")
-    public void test004() throws InterruptedException, IOException {
+    @Test(description = "切换城市--搜索指定城市",dataProvider = "getdata",dataProviderClass = GetDataProvider.class)
+    public void test004(String getcityname) throws InterruptedException, IOException {
         //先点击切换城市
         action.click(By.id(homePage.citynameid));
         //搜索
-        action.sendkeys(By.className(citynamePage.EditTextclass), "北京");
+        action.sendkeys(By.className(citynamePage.EditTextclass), getcityname);
         Thread.sleep(1000);
         action.Screenshot("测试编号004");
         String cityname = action.gettext(By.id(citynamePage.searchcityid));
@@ -136,7 +138,7 @@ public class HomePageTest extends TestSuite {
         action.Screenshot("测试编号005");
         Thread.sleep(1000);
         action.back();
-
+        Assert.assertTrue(action.isElementPresented(By.id(homePage.weatherdescribeid)));
     }
 
     /*
@@ -157,15 +159,18 @@ public class HomePageTest extends TestSuite {
         action.Screenshot("测试截图00601");
         //选择香港
         List<WebElement> getGangAoTaiCityname = citynamePage.getGangAoTaiCityname();
-        String cityname = getGangAoTaiCityname.get(0).getText();
+        String cityname = getGangAoTaiCityname.get(0).getText().replaceAll("中国","");
         getGangAoTaiCityname.get(0).click();
         String homepagecityname = action.gettext(By.id(homePage.citynameid));
+        //最好用断言不要用if语句来判断
+        Assert.assertEquals(cityname,homepagecityname);
 
         //判断选的城市是香港
         //判断两个字符串是否有包含字段，用indexof，结果不等于-1就代表包含
-        if (cityname.indexOf(homepagecityname) != -1) {
-            System.out.println("比对成功");
-        }
+//        if (cityname.indexOf(homepagecityname) != -1) {
+//            System.out.println("比对成功");
+//        }
+
         //测试截图
         action.Screenshot("测试截图00602");
         Thread.sleep(1000);
@@ -186,26 +191,23 @@ public class HomePageTest extends TestSuite {
     测试场景：输入门店名称搜索
     预期结果：判断第一条门店名称包含搜索内容
      */
-    @Test(description = "输入搜索内容搜索")
-    public void test007() throws IOException, InterruptedException {
+    @Test(description = "输入搜索内容搜索",dataProvider = "getdata",dataProviderClass = GetDataProvider.class)
+    public void test007(String searchcontent) throws IOException, InterruptedException {
         //点击首页搜索框
         action.click(By.id(homePage.searchlayoutid));
 
         //进入搜索页面，输入搜索内容
-        String searchcontent = "先花店";
         action.sendkeys(By.id(searchMerchantPage.searcheditid), searchcontent);
-        action.Screenshot("测试截图00701");
         //点击搜索按钮
         action.click(By.id(searchMerchantPage.searchbuttonid));
+        action.Screenshot("测试截图00701");
 
         Thread.sleep(1000);
         //比对搜索结果
         List<WebElement> getsearchmerchantname = searchMerchantPage.getsearchmerchantname();
         String merchantname = getsearchmerchantname.get(0).getText();
-        if (merchantname.indexOf(searchcontent) != -1) {
-
-            System.out.println("比对成功");
-        }
+        System.out.println(merchantname);
+        Assert.assertTrue(merchantname.indexOf(searchcontent) != -1);
         Thread.sleep(1000);
         action.Screenshot("测试截图00702");
 
@@ -216,12 +218,12 @@ public class HomePageTest extends TestSuite {
     测试场景：根据城市、省份搜索
     预期结果：判断城市地点正确
     */
-    @Test(description = "根据城市、省份搜索")
-    public void test008() throws IOException, InterruptedException {
+    @Test(description = "根据城市、省份搜索",dataProvider = "getdata",dataProviderClass = GetDataProvider.class)
+    public void test008(String searchcontent) throws IOException, InterruptedException {
         //点击首页搜索框
         action.click(By.id(homePage.searchlayoutid));
         //进入搜索页面，输入搜索内容
-        String searchcontent = "上海";
+//        String searchcontent = "上海";
         action.sendkeys(By.id(searchMerchantPage.searcheditid), searchcontent);
         action.Screenshot("测试截图00801");
         //点击搜索按钮
@@ -230,10 +232,8 @@ public class HomePageTest extends TestSuite {
         Thread.sleep(1000);
 
         //如果这个元素存在就代表搜索成功，不用比对结果
-        if (action.isElementPresented(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, "上海")))) {
-            System.out.println("搜索成功");
-            action.click(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, "上海")));
-        }
+        Assert.assertTrue(action.isElementPresented(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, "上海"))));
+        action.click(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, "上海")));
         Thread.sleep(1000);
         action.Screenshot("测试截图00802");
     }
@@ -270,9 +270,10 @@ public class HomePageTest extends TestSuite {
         Matcher matcher = pattern.matcher(merchantname);
         // 字符串是否与正则表达式相匹配
         boolean res = matcher.find();
-        if (res) {
-            System.out.println("比对成功");
-        }
+//        if (res) {
+//            System.out.println("比对成功");
+//        }
+        Assert.assertTrue(res);
 
         Thread.sleep(1000);
         action.Screenshot("测试截图00902");
@@ -300,10 +301,12 @@ public class HomePageTest extends TestSuite {
         Thread.sleep(1000);
 
         //如果这个元素存在就代表搜索成功，不用比对结果
-        if (action.isElementPresented(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, searchcontent)))) {
-            System.out.println("搜索成功");
-            action.click(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, searchcontent)));
-        }
+//        if (action.isElementPresented(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, searchcontent)))) {
+//            System.out.println("搜索成功");
+//            action.click(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, searchcontent)));
+//        }
+        Assert.assertTrue(action.isElementPresented(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, searchcontent))));
+        action.click(By.xpath(searchMerchantPage.getElement(searchMerchantPage.searchareaxpath, searchcontent)));
         Thread.sleep(1000);
         action.Screenshot("测试截图01002");
 
@@ -316,20 +319,29 @@ public class HomePageTest extends TestSuite {
      */
     @Test(description = "banner滑动后点击")
     public void test011() throws InterruptedException, IOException {
-        action.bannerSwipe(By.id(homePage.bannerid), "左滑", 3);
-        action.click(By.id(homePage.bannerid));
-        Thread.sleep(1000);
-        action.Screenshot("测试截图011");
-
+        if (action.isElementPresented(By.id(homePage.bannerid))){
+            System.out.println("有banner");
+            Reporter.log("有banner");
+            action.bannerSwipe(By.id(homePage.bannerid), "左滑", 3);
+            action.click(By.id(homePage.bannerid));
+            Thread.sleep(1000);
+            action.Screenshot("测试截图011");
+        }else {
+            System.out.println("没有banner");
+            Reporter.log("没有banner");
+        }
     }
 
     /*
     测试编号:012
-    测试场景：点击每一个服务球并返回
+    测试场景：点击每一个服务球并返回(借钱办卡页面点击进入返回键不管用，只能点击狠心离开按钮，此问题先忽略)
     预期结果：点击后截图查看
      */
     @Test(description = "点击每一个服务球并返回")
     public void test012() throws IOException, InterruptedException {
+        WebElement element = driver.findElement(By.className("android.widget.GridLayout"));
+        int y1= element.getLocation().getY();
+        int y2 = y1+element.getSize().getHeight();
 
         List<WebElement> serviceballs = homePage.getserviceballs();
         //只点击15个服务球，不点击下面的导航球
@@ -337,7 +349,7 @@ public class HomePageTest extends TestSuite {
             //获取坐标y值，判断y值在一定范围内才让点击，保证点击的是正确的。
             int y = serviceballs.get(i).getLocation().getY();
             System.out.println(y);
-            if (y >= 532 && y <= 1260) {
+            if (y >= y1 && y <= y2) {
                 serviceballs.get(i).click();
                 Thread.sleep(2000);
                 action.Screenshot("测试截图012" + i);
@@ -346,15 +358,17 @@ public class HomePageTest extends TestSuite {
             }
 
         }
+
     }
 
     /*
     测试编号:013
-    测试场景：滑动页面找到指定的门店
+    测试场景：滑动页面找到指定的门店,此用例作废，页面变动较大
     预期结果：断言门店是否正确
      */
-    @Test(description = "滑动页面找到指定的门店")
-    public void test013() {
+    @Test(description = "滑动页面找到指定的门店",enabled = false)
+    public void test013() throws InterruptedException {
+        Thread.sleep(2000);
         action.Swipe(1, 1);
         List<WebElement> getmerchanttitle = homePage.getmerchanttitle();
         getmerchanttitle.get(0).click();
@@ -362,28 +376,30 @@ public class HomePageTest extends TestSuite {
     }
 
 
-
     /*
     测试编号:014
     测试场景：查看待付款订单
-    预期结果：判断暂无订单，点击随便逛逛，回到首页
+    预期结果：判断暂无订单
      */
-    @Test(description = "查看待付款订单，判断暂无订单，点击随便逛逛，回到首页")
+    @Test(description = "查看待付款订单，判断暂无订单")
     public void test014() throws IOException, InterruptedException {
         meiTuanBusiness.enterorderpage();
-        action.click(By.id(orderPage.unpaidorder));
+        action.click(By.id(orderPage.ordertabunpaidid));
 
-        if (action.isElementPresented(By.id(orderPage.noorderid))) {
-            System.out.println("没有待付款的订单");
-            action.Screenshot("测试截图014");
-            action.click(By.id(orderPage.noOrderbuttonid));
-            if (action.isElementPresented(By.name(homePage.homepage))) {
-                System.out.println("进入首页");
-            }
-        } else {
-            System.out.println("有待付款的订单");
-            //有待付款订单的情况暂未测试
-        }
+//        if (action.isElementPresented(By.id(orderPage.noorderid))) {
+//            System.out.println("没有待付款的订单");
+//            action.Screenshot("测试截图014");
+//            action.click(By.id(orderPage.noOrderbuttonid));
+//            if (action.isElementPresented(By.name(homePage.homepage))) {
+//                System.out.println("进入首页");
+//            }
+//        } else {
+//            System.out.println("有待付款的订单");
+//            //有待付款订单的情况暂未测试
+//        }
+
+        //判断暂无订单
+        Assert.assertTrue(action.isElementPresented(By.id(orderPage.noorderid)));
 
     }
 
@@ -392,22 +408,25 @@ public class HomePageTest extends TestSuite {
     测试场景：查看待使用订单
     预期结果：判断暂无订单，点击随便逛逛，回到首页
     */
-    @Test(description = "查看待使用订单，判断暂无订单，点击随便逛逛，回到首页")
+    @Test(description = "查看待使用订单，判断暂无订单")
     public void test015() throws IOException, InterruptedException {
         meiTuanBusiness.enterorderpage();
-        action.click(By.id(orderPage.unusedid));
+        action.click(By.id(orderPage.ordertabunusedid));
 
-        if (action.isElementPresented(By.id(orderPage.noorderid))) {
-            System.out.println("没有待使用的订单");
-            action.Screenshot("测试截图015");
-            action.click(By.id(orderPage.noOrderbuttonid));
-            if (action.isElementPresented(By.name(homePage.homepage))) {
-                System.out.println("进入首页");
-            }
-        } else {
-            System.out.println("有待使用的订单");
-            //有待付款订单的情况暂未测试
-        }
+//        if (action.isElementPresented(By.id(orderPage.noorderid))) {
+//            System.out.println("没有待使用的订单");
+//            action.Screenshot("测试截图015");
+//            action.click(By.id(orderPage.noOrderbuttonid));
+//            if (action.isElementPresented(By.name(homePage.homepage))) {
+//                System.out.println("进入首页");
+//            }
+//        } else {
+//            System.out.println("有待使用的订单");
+//            //有待付款订单的情况暂未测试
+//        }
+
+        //判断暂无订单
+        Assert.assertTrue(action.isElementPresented(By.id(orderPage.noorderid)));
 
     }
 
@@ -419,15 +438,19 @@ public class HomePageTest extends TestSuite {
     @Test(description = "查看待评价订单,判断有订单去参与评价")
     public void test016() throws IOException, InterruptedException {
         meiTuanBusiness.enterorderpage();
-        action.click(By.id(orderPage.feedbackid));
+        action.click(By.id(orderPage.ordertabneedfeedbackid));
 
         if (action.isElementPresented(By.id(orderPage.noorderid))) {
             System.out.println("没有待评价的订单");
             action.Screenshot("测试截图01601");
-            action.click(By.id(orderPage.noOrderbuttonid));
-            if (action.isElementPresented(By.name(homePage.homepage))) {
-                System.out.println("进入首页");
-            }
+            //判断暂无订单
+            Assert.assertTrue(action.isElementPresented(By.id(orderPage.noorderid)));
+
+            //新版本没有随便逛逛按钮
+//            action.click(By.id(orderPage.noOrderbuttonid));
+//            if (action.isElementPresented(By.name(homePage.homepage))) {
+//                System.out.println("进入首页");
+//            }
         } else if (action.isElementPresented(By.id(orderPage.evaluateid))) {
             System.out.println("有待评价的订单");
 
@@ -455,25 +478,29 @@ public class HomePageTest extends TestSuite {
                 action.click(By.id(evaluatePage.btnsubmitcommentid));
 
                 //提交成功后的判断
-                if (action.isElementPresented(By.id(evaluatePage.tvsharecommenttitleid))) {
-                    System.out.println("分享成功");
-                    action.click(By.id(evaluatePage.imgsharecommentcloseid));
-                } else {
-                    System.out.println("分享不成功");
-                }
+//                if (action.isElementPresented(By.id(evaluatePage.tvsharecommenttitleid))) {
+//                    System.out.println("分享成功");
+//                    action.click(By.id(evaluatePage.imgsharecommentcloseid));
+//                } else {
+//                    System.out.println("分享不成功");
+//                }
+
+                Assert.assertTrue(action.isElementPresented(By.id(evaluatePage.tvsharecommenttitleid)));
+
             } else if (action.isElementPresented(By.id(evaluatePage.ugcaddreviewid))) {//如果有发布按钮，走以下评价页面
                 action.click(By.id(evaluatePage.ugcscorelabelperfectid));
                 action.sendkeys(By.id(evaluatePage.reviewcontentid), "很不错的一次体验啊，感觉很好");
                 action.click(By.id(evaluatePage.ugcaddreviewid));
                 //提交成功后的判断
-                if (action.isElementPresented(By.id(evaluatePage.successthankstipid))) {
-                    System.out.println("分享成功");
-                    action.click(By.id(evaluatePage.reviewsuccessid));
-                } else {
-                    System.out.println("分享不成功");
-                }
-            } else {
-                System.out.println("进入评价页面失败");
+//                if (action.isElementPresented(By.id(evaluatePage.successthankstipid))) {
+//                    System.out.println("分享成功");
+//                    action.click(By.id(evaluatePage.reviewsuccessid));
+//                } else {
+//                    System.out.println("分享不成功");
+//                }
+
+                Assert.assertTrue(action.isElementPresented(By.id(evaluatePage.successthankstipid)));
+
             }
         }
     }
@@ -486,24 +513,25 @@ public class HomePageTest extends TestSuite {
     @Test(description = "查看退款、售后订单")
     public void test017() throws IOException, InterruptedException {
         meiTuanBusiness.enterorderpage();
-        action.click(By.id(orderPage.refundid));
+        action.click(By.id(orderPage.ordertabrefundid));
         if (action.isElementPresented(By.id(orderPage.noorderid))) {
             System.out.println("没有退款的订单");
             action.Screenshot("测试截图01701");
-            action.click(By.id(orderPage.noOrderbuttonid));
-            if (action.isElementPresented(By.name(homePage.homepage))) {
-                System.out.println("进入首页");
-            }
+            //判断暂无订单
+            Assert.assertTrue(action.isElementPresented(By.id(orderPage.noorderid)));
+
+//            action.click(By.id(orderPage.noOrderbuttonid));
+//            if (action.isElementPresented(By.name(homePage.homepage))) {
+//                System.out.println("进入首页");
+//            }
         }else if (action.isElementPresented(By.id(refundPage.refundstatusid))){
             System.out.println("有退款的订单");
+            Thread.sleep(500);
+            action.Screenshot("测试截图01702");
             //先判断订单状态为退款成功，可能会有其他的状态，目前没有数据测试不准确
             Assert.assertEquals(action.gettext(By.id(refundPage.refundstatusid)),"退款成功");
 
-        }else {
-            System.out.println("进入退款/售后页面失败");
         }
-
-
     }
     /*
     测试编号:018
@@ -513,28 +541,33 @@ public class HomePageTest extends TestSuite {
     @Test(description = "点击退款进度进入退款进度页面")
     public void test018() throws IOException, InterruptedException {
         meiTuanBusiness.enterorderpage();
-        action.click(By.id(orderPage.refundid));
+        action.click(By.id(orderPage.ordertabrefundid));
         if (action.isElementPresented(By.id(orderPage.noorderid))) {
             System.out.println("没有退款的订单");
             action.Screenshot("测试截图01801");
-            action.click(By.id(orderPage.noOrderbuttonid));
-            if (action.isElementPresented(By.name(homePage.homepage))) {
-                System.out.println("进入首页");
-            }
+            //判断暂无订单
+            Assert.assertTrue(action.isElementPresented(By.id(orderPage.noorderid)));
+
+//            action.click(By.id(orderPage.noOrderbuttonid));
+//            if (action.isElementPresented(By.name(homePage.homepage))) {
+//                System.out.println("进入首页");
+//            }
         }else if (action.isElementPresented(By.id(refundPage.refundstatusid))){
             System.out.println("有退款的订单");
             action.Screenshot("测试截图01802");
             //先判断订单状态为退款成功，可能会有其他的状态，目前没有数据测试不准确
             Assert.assertEquals(action.gettext(By.id(refundPage.refundstatusid)),"退款成功");
             action.click(By.name(refundPage.refundname));
-            if (action.isElementPresented(By.name(refundPage.refundsuccess)) &&
-            action.isElementPresented(By.name(refundPage.refunddone))){
-                System.out.println("退款成功");
-                action.Screenshot("测试截图01802");
-            }
 
-        }else {
-            System.out.println("进入退款/售后页面失败");
+            Assert.assertTrue(action.isElementPresented(By.name(refundPage.refundsuccess)));
+            Assert.assertTrue(action.isElementPresented(By.name(refundPage.refunddone)));
+
+//            if (action.isElementPresented(By.name(refundPage.refundsuccess)) &&
+//            action.isElementPresented(By.name(refundPage.refunddone))){
+//                System.out.println("退款成功");
+//                action.Screenshot("测试截图01802");
+//            }
+
         }
     }
 
@@ -546,17 +579,19 @@ public class HomePageTest extends TestSuite {
     @Test(description = "查看全部订单")
     public void test019() throws IOException, InterruptedException {
         meiTuanBusiness.enterorderpage();
-        action.click(By.id(orderPage.allorderid));
+        action.click(By.id(orderPage.ordertaballid));
         List<WebElement> getorderstatus = orderPage.getorderstatus();
-
 
         if (action.isElementPresented(By.id(orderPage.noorderid))) {
             System.out.println("没有订单");
             action.Screenshot("测试截图01901");
-            action.click(By.id(orderPage.noOrderbuttonid));
-            if (action.isElementPresented(By.name(homePage.homepage))) {
-                System.out.println("进入首页");
-            }
+            //判断暂无订单
+            Assert.assertTrue(action.isElementPresented(By.id(orderPage.noorderid)));
+
+//            action.click(By.id(orderPage.noOrderbuttonid));
+//            if (action.isElementPresented(By.name(homePage.homepage))) {
+//                System.out.println("进入首页");
+//            }
         }else if (getorderstatus.get(0).isDisplayed()){
             System.out.println("有订单");
             action.Screenshot("测试截图01902");
@@ -564,14 +599,14 @@ public class HomePageTest extends TestSuite {
             String orderstatus = getorderstatus.get(0).getText();
             getorderstatus.get(0).click();
             String orderdetailstatus = action.gettext(By.id(orderPage.orderdetailtitleid));
-            if (orderdetailstatus.indexOf(orderstatus) != -1){
-                System.out.println("订单状态正确");
-            }else {
-                System.out.println("订单状态不正确");
-            }
+            Assert.assertTrue(orderdetailstatus.indexOf(orderstatus) != -1);
 
-        }else {
-            System.out.println("进入订单页面失败");
+//            if (orderdetailstatus.indexOf(orderstatus) != -1){
+//                System.out.println("订单状态正确");
+//            }else {
+//                System.out.println("订单状态不正确");
+//            }
+
         }
     }
 
@@ -581,18 +616,21 @@ public class HomePageTest extends TestSuite {
     预期结果：判断进入到微信页面
      */
     @Test(description = "调起微信分享门店信息")
-    public void test020() throws InterruptedException {
+    public void test020() throws InterruptedException, IOException {
         //选择门店
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         action.Swipe(1,1);
-        List<WebElement> getElements = meiTuanBusiness.GetElements(By.id(homePage.getmerchanttitleid));
-        getElements.get(0).click();
+        List<WebElement> getElements = meiTuanBusiness.GetElements(By.id(homePage.dynamiccontainerid));
+        getElements.get(1).click();
+//        String merchantsname = getElements.get(1).getText();
 
-        String merchantsname = getElements.get(0).getText();
+        String merchantsname = action.gettext(By.id(groupDetailPage.fooddealdetailmealheaderpoinameid));
+        System.out.println(merchantsname);
 
         //进入门店详情点击分享商家
-        action.click(By.id(groupDetailPage.threepointid));
-        action.click(By.name(groupDetailPage.sharemerchantname));
+//        action.click(By.id(groupDetailPage.threepointid));
+//        action.click(By.name(groupDetailPage.sharemerchantname));
+        action.click(By.id(groupDetailPage.shareid));
         List<WebElement> getshareelements = meiTuanBusiness.GetElements(By.id(groupDetailPage.shareimageid));
         getshareelements.get(0).click();
 
@@ -605,10 +643,15 @@ public class HomePageTest extends TestSuite {
         //断言分享成功
         action.click(By.name(weixinPage.friendname));
         String sharemerchantsname = action.gettext(By.id(weixinPage.aoyid));
-        if (merchantsname.equals(sharemerchantsname)){
-            System.out.println("分享成功");
-        }
+        System.out.println(sharemerchantsname);
+        Assert.assertTrue(sharemerchantsname.indexOf(merchantsname) != -1);
+
+        action.Screenshot("测试截图020");
+//        if (merchantsname.equals(sharemerchantsname)){
+//            System.out.println("分享成功");
+//        }
     }
+
 
 
 

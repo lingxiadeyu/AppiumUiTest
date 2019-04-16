@@ -21,6 +21,10 @@ public class GroupDetailPage {
 
     //分享商家
     public String sharemerchantname = "分享商家";
+    //获取商户名称
+    public String fooddealdetailmealheaderpoinameid = "com.sankuai.meituan:id/food_deal_detail_meal_header_poi_name";
+    //分享图标
+    public String shareid = "com.sankuai.meituan:id/share";
     //分享图片,List
     public String shareimageid = "com.sankuai.meituan:id/share_image";
 

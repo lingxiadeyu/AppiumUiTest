@@ -86,6 +86,7 @@ public class Action {
         int height = androidDriver.manage().window().getSize().height;
 
 
+        //如果滑动到底部，true为false，不再继续查找元素
         while (true){
             try {
                 //找到元素退出当前循环，找不到元素进入catch语句中做滑动页面
@@ -114,9 +115,53 @@ public class Action {
     }
 
     /**
+     *滑动一个元素，去找另一个元素知道找到不再滑动
+     * @param swipeelement
+     * @param UporDownorRightorLeft 向上或者向下滑动,1向上滑，2向下滑,3左滑，4右滑
+     *
+     */
+    public void Swipefindotherelement(By swipeelement,int UporDownorRightorLeft){
+
+        WebElement element1;
+        androidDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+        //获取页面的宽度和高度
+        int width = androidDriver.manage().window().getSize().width;
+        int height = androidDriver.manage().window().getSize().height;
+
+
+        while (true){
+            try {
+                //滑动一个元素，去找另一个元素直到找到不再滑动,找到元素退出当前循环，找不到元素进入catch语句中做滑动页面
+//                element1 = androidDriver.findElement(findelement);
+                element1 = androidDriver.findElement(By.name("叫座儿鲜煲火锅（亚运村店）"));
+                break;
+            }catch (Exception e){
+                switch (UporDownorRightorLeft){
+                    case 1://"up"
+                        androidDriver.swipe(width/2,height*3/4,width/2,height/4,500);
+                        break;
+                    case 2://"down"
+                        androidDriver.swipe(width/2,height/4,width/2,height*3/4,500);
+                        break;
+                    case 3://"left"
+                        androidDriver.swipe(width*3/4,height/2,width/4,height/2,500);
+                        break;
+                    case 4://"right"
+                        androidDriver.swipe(width/4,height/2,width*3/4,height/2,500);
+                        break;
+
+                }
+            }
+        }
+        androidDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+    }
+
+    /**
      *滑动页面
      * @param UporDownorRightorLeft 向上或者向下滑动,1向上滑，2向下滑,3左滑，4右滑
-     * @param swipenums
+     * @param swipenums 滑动次数
      *
      */
     public void Swipe(int UporDownorRightorLeft,int swipenums){
@@ -129,19 +174,19 @@ public class Action {
         for (int i=0;i<swipenums;i++){
             //UporDownorRightorLeft == 1 向上滑动
             if (UporDownorRightorLeft == 1){
-                androidDriver.swipe(width/2,height*3/4,width/2,height/4,500);
+                androidDriver.swipe(width/2,height*3/4,width/2,height/4,1000);
             }
             //UporDownorRightorLeft == 2 向下滑动
             if (UporDownorRightorLeft == 2){
-                androidDriver.swipe(width/2,height/4,width/2,height*3/4,500);
+                androidDriver.swipe(width/2,height/4,width/2,height*3/4,1000);
             }
             //UporDownorRightorLeft == 3 向左滑动
             if (UporDownorRightorLeft == 3){
-                androidDriver.swipe(width*3/4,height/2,width/4,height/2,500);
+                androidDriver.swipe(width*3/4,height/2,width/4,height/2,1000);
             }
             //UporDownorRightorLeft == 4 向右滑动
             if (UporDownorRightorLeft == 4){
-                androidDriver.swipe(width/4,height/2,width*3/4,height/2,500);
+                androidDriver.swipe(width/4,height/2,width*3/4,height/2,1000);
             }
         }
     }
@@ -182,18 +227,68 @@ public class Action {
         }
     }
 
+    //滑动某个控件,有两种情况，第一种是根据元素的y坐标和屏幕的x坐标去滑动；第二种是根据元素的x坐标和屏幕的y坐标去滑动
+    public  void swipeelement(WebElement element, String swipeway,int nums) throws InterruptedException {
+        //先获取控件的起点x坐标值
+//        WebElement element = androidDriver.findElement(by);
+        int xStartPoint = element.getLocation().getX();
+        //获取控件的宽度,计算出控件的x终点坐标值
+        int xEndPoint = xStartPoint+element.getSize().getWidth();
+        //获取控件的Y起点坐标值
+        int yStartPoint = element.getLocation().getY();
+        int yEndPoint = yStartPoint+element.getSize().getHeight();
+
+        System.out.println(xStartPoint+","+xEndPoint+","+yStartPoint+","+yEndPoint);
+        //获取页面的宽度和高度
+        int width = androidDriver.manage().window().getSize().width;
+        int height = androidDriver.manage().window().getSize().height;
+
+
+
+        for (int i=0;i<nums;i++){
+            if (swipeway.equals("左滑")){
+                //可以根据控件的宽度调整滑动多宽，可以调整20为30、40等等，以下方法类似
+                Thread.sleep(500);
+                androidDriver.swipe(width*3/4,(yEndPoint-yStartPoint)/2+yStartPoint,width/4,(yEndPoint-yStartPoint)/2+yStartPoint,500);
+                System.out.println("滑动成功");
+                Thread.sleep(500);
+            }
+            if (swipeway.equals("右滑")){
+                Thread.sleep(500);
+                androidDriver.swipe(width/4,(yEndPoint-yStartPoint)/2+yStartPoint,width*3/4,(yEndPoint-yStartPoint)/2+yStartPoint,500);
+                Thread.sleep(500);
+            }
+            if (swipeway.equals("上滑")){
+                //可以根据控件的宽度调整滑动多宽，可以调整20为30、40等等，以下方法类似
+                Thread.sleep(500);
+                androidDriver.swipe((xEndPoint-xStartPoint)/2+xStartPoint,height*3/4,(xEndPoint-xStartPoint)/2+xStartPoint,height/4,500);
+                System.out.println("滑动成功");
+                Thread.sleep(500);
+            }
+            if (swipeway.equals("下滑")){
+                Thread.sleep(500);
+                androidDriver.swipe((xEndPoint-xStartPoint)/2+xStartPoint,height/4,(xEndPoint-xStartPoint)/2+xStartPoint,height*3/4,500);
+                Thread.sleep(500);
+            }
+
+        }
+    }
+
     //输入信息
     public void sendkeys(By by,String keyvalue){
         //先点击
         this.click(by);
-
         //把光标移动到末尾键
         androidDriver.sendKeyEvent(123);
         //获取元素内容的长度
         int size = androidDriver.findElement(by).getText().length();
-        //循环删除内容
-        for (int i=0;i<size;i++){
-            androidDriver.sendKeyEvent(AndroidKeyCode.BACKSPACE);
+        if (size == 0){
+
+        }else {
+            //循环删除内容
+            for (int i=0;i<size;i++){
+                androidDriver.sendKeyEvent(AndroidKeyCode.BACKSPACE);
+            }
         }
         androidDriver.findElement(by).sendKeys(keyvalue);
     }
@@ -258,12 +353,5 @@ public class Action {
     public String gettext(By by){
         return androidDriver.findElement(by).getText();
     }
-
-
-
-
-
-
-
 
 }

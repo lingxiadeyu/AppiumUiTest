@@ -17,7 +17,7 @@ public class LoginPage {
     public String passwordlogin = "密码登录";
     public String username = "请输入手机号";
     public String usernameresourceid = "com.sankuai.meituan:id/passport_mobile_phone";
-    public String password = "请输入密码";
+    public String passwordid = "com.sankuai.meituan:id/edit_password";
     public String loginbutton = "登录";
 
 }

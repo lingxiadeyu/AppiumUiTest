@@ -60,7 +60,7 @@ public class AppiumTestOne extends TestSuite {
             action.click(By.name(loginPage.passwordlogin));
         }catch (Exception e){
             action.sendkeys(By.id(loginPage.usernameresourceid),"18600228767");
-            action.sendkeys(By.name(loginPage.password),"12345678");
+            action.sendkeys(By.id(loginPage.passwordid),"12345678");
             Thread.sleep(500);
             action.click(By.name(loginPage.loginbutton));
             Thread.sleep(500);
@@ -99,11 +99,7 @@ public class AppiumTestOne extends TestSuite {
 //        action.click(By.name(homePage.ordername));
 //
 //    }
-    @Test(description = "用例1")
-    public void test0014(){
-        action.click(By.name(homePage.ordername));
 
-    }
 
 
 
