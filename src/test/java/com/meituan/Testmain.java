@@ -348,8 +348,8 @@ public class Testmain extends TestSuite {
         Thread.sleep(1000);
 
         Assert.assertEquals("1","1","断言成功");
-        action.Screenshot("测试截图001");
-        action.Screenshot("测试截图002");
+        action.Screenshot("001");
+        action.Screenshot("002");
 
     }
 

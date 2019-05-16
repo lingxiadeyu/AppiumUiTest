@@ -32,7 +32,7 @@ public class HomePageTest extends TestSuite {
         Thread.sleep(1000);
         hotcity.get(hotcity.size() - 1).click();
         //测试截图
-        action.Screenshot("测试编号001");
+        action.Screenshot("001");
         Thread.sleep(1000);
         action.takeScreenForElement(By.id("com.sankuai.meituan:id/avatar"),"测试头像截图");
         //判断选择的城市是点击的cityname
