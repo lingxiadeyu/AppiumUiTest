@@ -13,7 +13,7 @@ import com.meituan.Pages.OrderPages.OrderPage;
 import com.meituan.Pages.OrderPages.RefundPage;
 import com.meituan.Pages.WaiMaiPages.WaiMaiHomePage;
 import com.meituan.Pages.WaiMaiPages.WaiMaiMerchantDetailPage;
-import com.meituan.Util.Action;
+import com.meituan.Base.Action;
 import com.meituan.Util.ElementSource;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
@@ -89,7 +89,7 @@ public class MeiTuanBusiness{
             action.click(By.id(orderPage.loginbuttonid));
             //操作登录
             action.sendkeys(By.id(loginPage.usernameresourceid), "18600228767");
-            action.sendkeys(By.name(loginPage.passwordid), "Qin777QQ");
+            action.sendkeys(By.id(loginPage.passwordid), "Qin777QQ");
             action.click(By.name(loginPage.loginbutton));
             System.out.println("登录成功");
         }

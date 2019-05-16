@@ -7,7 +7,7 @@ java.io.FileNotFoundException: ~\picture.docx (系统找不到指定的路径。
 	at com.deepoove.poi.XWPFTemplate.compile(XWPFTemplate.java:100)
 	at com.deepoove.poi.XWPFTemplate.compile(XWPFTemplate.java:77)
 	at com.deepoove.poi.XWPFTemplate.compile(XWPFTemplate.java:73)
-	at com.meituan.Util.Action.testNumbericRender(Action.java:276)
+	at com.meituan.Base.Action.testNumbericRender(Action.java:276)
 	at com.meituan.HomePageTest.test007(HomePageTest.java:173)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

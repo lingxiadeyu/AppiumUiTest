@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suite" parallel="tests" thread-count="1">
+    <test name="98895a383037523351">
+        <parameter name="udid" value="98895a383037523351"/>
+        <parameter name="port" value="4723"/>
+        <classes>
+            <class name="com.meituan.Testmain"/>
+            <class name="com.meituan.HomePageTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.meituan.Util.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

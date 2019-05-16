@@ -12,11 +12,16 @@ import com.meituan.Pages.OrderPages.EvaluatePage;
 import com.meituan.Pages.MainPages.LoginPage;
 import com.meituan.Pages.OrderPages.OrderPage;
 import com.meituan.Pages.OrderPages.RefundPage;
-import com.meituan.Util.Action;
+import com.meituan.Base.Action;
+import com.meituan.Pages.WaiMaiPages.WaiMaiHomePage;
+import com.meituan.Pages.WaiMaiPages.WaiMaiMerchantDetailPage;
 import com.meituan.Util.ElementSource;
 import io.appium.java_client.android.AndroidDriver;
+import org.testng.Assert;
+
 /*
 断言类，为每一个测试用例提供断言方法
+不准备封装该方法，该方法可以直接在测试用例中使用，使用起来也很方便
  */
 public class MeiTuanAssert {
     AndroidDriver driver;
@@ -33,6 +38,8 @@ public class MeiTuanAssert {
     public RefundPage refundPage;//退款页面
     public MeiShiHomePage meiShiHomePage;//美食业务--首页
     public MeiShiMerchantDetailPage meiShiMerchantDetailPage;//美食业务--门店详情页
+    public WaiMaiHomePage waiMaiHomePage;//外卖业务--首页
+    public WaiMaiMerchantDetailPage waiMaiMerchantDetailPage;//外卖业务--门店详情页
     public Action action;//所有操作
     public ElementSource elementSource;//从yaml中获取资源信息
 
@@ -51,10 +58,11 @@ public class MeiTuanAssert {
         refundPage = new RefundPage(driver);
         meiShiHomePage = new MeiShiHomePage(driver);
         meiShiMerchantDetailPage = new MeiShiMerchantDetailPage(driver);
+        waiMaiHomePage = new WaiMaiHomePage(driver);
+        waiMaiMerchantDetailPage = new WaiMaiMerchantDetailPage(driver);
         action = new Action(driver);
         elementSource = new ElementSource();
 
     }
-
 
 }

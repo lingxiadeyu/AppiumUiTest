@@ -1,17 +1,13 @@
 package com.meituan;
-import com.meituan.Util.GetDataProvider;
-import com.meituan.Util.TestSuite;
+import com.meituan.Base.TestSuite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class HomePageTest extends TestSuite {
 
@@ -37,6 +33,8 @@ public class HomePageTest extends TestSuite {
         hotcity.get(hotcity.size() - 1).click();
         //测试截图
         action.Screenshot("测试编号001");
+        Thread.sleep(1000);
+        action.takeScreenForElement(By.id("com.sankuai.meituan:id/avatar"),"测试头像截图");
         //判断选择的城市是点击的cityname
 //        Assert.assertEquals(driver.findElement(By.id(homePage.citynameid)).getText(),cityname);
         Assert.assertEquals(action.gettext(By.id(homePage.citynameid)), cityname);
@@ -652,6 +650,20 @@ public class HomePageTest extends TestSuite {
 ////        }
 //    }
 
+
+//    @Test
+//    public void test0111() throws InterruptedException {
+//        //点击首页搜索框
+//        action.click(By.id(homePage.searchlayoutid));
+//
+//        Thread.sleep(2000);
+//        driver.findElement(By.id(searchMerchantPage.searcheditid)).sendKeys("111111");
+//                //进入搜索页面，输入搜索内容
+//        //点击搜索按钮
+//        action.click(By.id(searchMerchantPage.searchbuttonid));
+//
+//        //测试美团的登录手机号是否会先清空再输入
+//    }
 
 
     @AfterMethod

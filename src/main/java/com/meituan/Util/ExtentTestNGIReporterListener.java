@@ -156,7 +156,8 @@ public class ExtentTestNGIReporterListener implements IReporter {
                         name= name.substring(0,49)+"...";
                     }
                 }else{
-                    name = result.getMethod().getMethodName();
+                    //使报告中展示出测试的类名和测试的方法名
+                    name = result.getTestClass().getName()+" : "+result.getMethod().getMethodName();
                 }
                 if(extenttest==null){
                     test = extent.createTest(name);

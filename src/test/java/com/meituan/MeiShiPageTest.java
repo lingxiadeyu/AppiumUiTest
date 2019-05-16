@@ -1,10 +1,7 @@
 package com.meituan;
 
-import com.meituan.Util.GetDataProvider;
-import com.meituan.Util.TestSuite;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import io.appium.java_client.TouchAction;
-import org.apache.commons.collections.map.HashedMap;
+import com.meituan.Base.GetDataProvider;
+import com.meituan.Base.TestSuite;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;

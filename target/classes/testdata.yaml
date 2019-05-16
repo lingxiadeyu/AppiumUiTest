@@ -6,3 +6,19 @@ serviceballtwo : "电影/演出"
 startelement : "虾吃虾涮（安贞店）"
 #---------------------------数据--------------------
 merchantname : "亮健容天土锅羊蝎子（安贞店）"
+#---------------------------driver初始化设置参数--------------------
+appDir : "meituan-9.12.801.apk"
+platformName : "Android"
+deviceName : "98895a383037523351"
+platformVersion : "7.0"
+appPackage : "com.sankuai.meituan"
+appActivity : "com.meituan.android.pt.homepage.activity.MainActivity"
+noReset : "true"
+noSign : "true"
+newCommandTimeout : 600
+automationName : "Selendroid"
+#---------------------------发邮件信息--------------------
+senderusername: jettech_qinzx@sina.com
+senderpassword: Qin777QQ
+sender : jettech_qinzx@sina.com
+receiver : jettech_qinzx@sina.com;qihua_sun@sina.com

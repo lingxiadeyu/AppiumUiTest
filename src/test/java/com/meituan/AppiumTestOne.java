@@ -1,13 +1,13 @@
 package com.meituan;
 
-import com.meituan.Util.TestSuite;
+import com.meituan.Base.TestSuite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.List;
 
 public class AppiumTestOne extends TestSuite {
@@ -100,6 +100,20 @@ public class AppiumTestOne extends TestSuite {
 //
 //    }
 
+
+    @Test(description = "练习xpath")
+    public void testswipeelement() throws IOException, InterruptedException {
+        //正常使用xpath
+        //通过父级去定位
+//        节点轴选择 html.xapth('//li/child::') 直接子节点
+//
+//        html.xapth('//li/ancestor::') 所有祖先节点
+//
+//        html.xapth('//li'/attribute::) 获取所有的属性值
+//
+//        html.xapth('//li/decendant::') 获取所有的子孙节点
+
+    }
 
 
 

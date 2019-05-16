@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/testimages/测试截图kkkk target=_blank>Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/testimages/测试截图kkkk style=width:30px;height:30px img/>]]>
+    </line>
+  </reporter-output>
+  <suite name="suite" duration-ms="35081" started-at="2019-05-16T08:04:40Z" finished-at="2019-05-16T08:05:15Z">
+    <groups>
+    </groups>
+    <test name="98895a383037523351" duration-ms="35081" started-at="2019-05-16T08:04:40Z" finished-at="2019-05-16T08:05:15Z">
+      <class name="com.meituan.Testmain">
+        <test-method status="PASS" signature="AndroidSettings(java.lang.String, java.lang.String)[pri:0, instance:com.meituan.Testmain@fd02e5]" name="AndroidSettings" is-config="true" duration-ms="12244" started-at="2019-05-16T16:04:40Z" finished-at="2019-05-16T16:04:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[98895a383037523351]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AndroidSettings -->
+        <test-method status="PASS" signature="teststartappium()[pri:0, instance:com.meituan.Testmain@fd02e5]" name="teststartappium" duration-ms="19048" started-at="2019-05-16T16:04:52Z" description="启动appium服务" finished-at="2019-05-16T16:05:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=http://localhost:8080/job/appiumTest/testimages/测试截图kkkk target=_blank>Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=http://localhost:8080/job/appiumTest/testimages/测试截图kkkk style=width:30px;height:30px img/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teststartappium -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.meituan.Testmain@fd02e5]" name="teardown" is-config="true" duration-ms="3771" started-at="2019-05-16T16:05:11Z" finished-at="2019-05-16T16:05:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.meituan.Testmain -->
+    </test> <!-- 98895a383037523351 -->
+  </suite> <!-- suite -->
+</testng-results>

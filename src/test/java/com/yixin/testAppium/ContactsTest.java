@@ -3,7 +3,7 @@ package com.yixin.testAppium;
 
 import com.meituan.Pages.HomePages.HomePage;
 import com.meituan.Pages.ListItemPage;
-import com.meituan.Util.Action;
+import com.meituan.Base.Action;
 import com.yixin.BusinessLayer.Infrastructure_ClickAllCategory;
 import com.yixin.BusinessLayer.Infrastructure_Login;
 import com.yixin.Operation.ElementPressAndSwipe;

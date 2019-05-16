@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite name="执行移动端美团测试用例">
-    <test name="执行移动端美团测试用例">
+<suite name="执行移动端美团测试用例" parallel="tests" thread-count="2">
+    <test name="98895a383037523351">
+        <parameter name="udid" value="98895a383037523351"/>
+        <parameter name="port" value="4723"/>
         <classes>
-            <class name="com.meituan.HomePageTest"/>
+            <class name="com.meituan.Testmain"/>
         </classes>
     </test>
+    <!--<test name="192.168.215.101:5555">-->
+        <!--<parameter name="udid" value="192.168.215.101:5555"/>-->
+        <!--<parameter name="port" value="4724"/>-->
+        <!--<classes>-->
+            <!--<class name="com.meituan.Testmain"/>-->
+        <!--</classes>-->
+    <!--</test>-->
     <listeners>
         <listener class-name="com.meituan.Util.ExtentTestNGIReporterListener"/>
     </listeners>

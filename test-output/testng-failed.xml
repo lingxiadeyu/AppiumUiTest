@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [suite]" parallel="tests">
+  <parameter name="port" value="4723"/>
+  <parameter name="udid" value="98895a383037523351"/>
+  <listeners>
+    <listener class-name="com.meituan.Util.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="98895a383037523351">
+    <parameter name="port" value="4723"/>
+    <parameter name="udid" value="98895a383037523351"/>
+    <classes>
+      <class name="com.meituan.Testmain"/>
+    </classes>
+  </test> <!-- 98895a383037523351 -->
+</suite> <!-- Failed suite [suite] -->

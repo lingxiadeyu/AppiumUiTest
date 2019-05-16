@@ -1,4 +1,4 @@
-package com.meituan.Util;
+package com.meituan.Base;
 
 /*
 为测试用例提供测试数据

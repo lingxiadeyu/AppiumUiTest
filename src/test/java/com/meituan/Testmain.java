@@ -1,22 +1,23 @@
 package com.meituan;
 
+import com.meituan.Server.Servers;
 import com.meituan.Util.ElementSource;
-import com.meituan.Util.GetDataProvider;
-import com.meituan.Util.TestSuite;
+import com.meituan.Base.GetDataProvider;
+import com.meituan.Base.TestSuite;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import jdk.nashorn.internal.runtime.regexp.joni.Regex;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.xerces.impl.xpath.regex.Match;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import javax.xml.ws.Response;
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DecimalFormat;
@@ -156,7 +157,7 @@ public class Testmain extends TestSuite {
 
     }
 
-    @Test(description = "string的split方法是根据分隔符分割字符串得到string数组")
+    //@Test(description = "string的split方法是根据分隔符分割字符串得到string数组")
     public void testsplit(){
         String str="取名次第11111名";
         //把"第"当成一个分隔符,截取字符串，存储到string数组中，数组中有两个值，strstart[0]="取名次"，strstart[1]="11111名"
@@ -182,7 +183,7 @@ public class Testmain extends TestSuite {
 
     }
 
-    @Test
+   // @Test
     public void test0010(){
         int a = 15;
         double b = 20.29;
@@ -194,7 +195,7 @@ public class Testmain extends TestSuite {
 
     }
 
-    @Test(enabled = false,description = "map存储数据，并对map排序")
+    //@Test(enabled = false,description = "map存储数据，并对map排序")
     public void test0011(){
 
         //定义金额为两位小数
@@ -239,15 +240,136 @@ public class Testmain extends TestSuite {
 
     }
 
-    @Test(description = "从yaml中读取文件")
+    //@Test(description = "从yaml中读取文件")
     public void getdatafromyaml(){
         ElementSource elementSource = new ElementSource();
         System.out.println(elementSource.getElementsource("merchantname"));
     }
 
-    @Test(dataProvider = "getdata",dataProviderClass = GetDataProvider.class)
+    //@Test(dataProvider = "getdata",dataProviderClass = GetDataProvider.class)
     public void getdatafordataprovider(String name){
         System.out.println(name);
+    }
+
+    //@Test(description = "用uiautomator")
+    public void useuiautomator(){
+        driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"com.sankuai.meituan:id/search_layout\")").click();
+//        driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"com.sankuai.meituan:id/search_edit\")").sendKeys("2222");
+
+//        1.	findElementByAndroidUIAutomator
+//        该方法的参数是使用uiautomator这个工具进行定位的方式，参数直接是将uiautomator定位方式以字符串形式传递
+//        1.1	uiautomator的id定位方式
+        driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"resourceId\")");
+        driver.findElementByAndroidUIAutomator("new UiSelector().resourceIdMatches(\"regex\")");
+        driver.findElementByAndroidUIAutomator("new UiSelector().resourceIdMatches(\"com.sankuai.meituan:id/search_edit\")").sendKeys("3333");
+
+//
+//        1.2 uiautomator的text定位方式
+        driver.findElementByAndroidUIAutomator("new UiSelector().text(\"汉堡王\")").click();
+        driver.findElementByAndroidUIAutomator("new UiSelector().textContains (\"欢乐\")").click();
+        driver.findElementByAndroidUIAutomator("new UiSelector().textMatches (\"regex\")").click();
+        driver.findElementByAndroidUIAutomator("new UiSelector().textStartsWith(\"大熊猫\")").click();
+//
+//        1.3 uiautomator的classname定位方式
+        driver.findElementByAndroidUIAutomator("new UiSelector().className(\"className\")");
+        driver.findElementByAndroidUIAutomator("new UiSelector().classNameMatches (\"regex\")");
+//        1.4 可以指定查找到的第几个，红色部分括号里写上索引即可
+        driver.findElementByAndroidUIAutomator("new UiSelector().text(\"登录\").instance(1)");
+//        1.5 滑动到指定文本的元素
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className(\"android.widget.TextView\"), \"你想滑动到的元素字符串 \")");
+//        1.6 根据元素其他属性进行定位，
+        driver.findElementsByAndroidUIAutomator("new UiSelector().resourceId(\"android:id/checkbox\").checked(false)");
+
+    }
+
+    //@Test(description = "练习xpath")
+    public void testxpath() throws IOException, InterruptedException {
+        //android.widget.LinearLayout/android.widget.LinearLayout[@id='com.sankuai.meituan:id/city_area_select_layout']/child::com.sankuai.meituan:id/city_select_area[@id='com.sankuai.meituan:id/city_select_area']
+
+//        driver.findElement(By.id("com.sankuai.meituan:id/city_name")).click();
+//        driver.findElement(By.xpath("//android.widget.TextView{contains(@resource-id,'com.sankuai.meituan:id/city_select_area')}")).click();
+
+        //android.widget.TextView[@id='com.sankuai.meituan:id/city_select_area']/parent::android.widget.LinearLayout
+
+//        html.xapth('//li/parent::') 通过父级去定位
+//        html.xapth('//li/child::') 直接子节点
+//        html.xapth('//li/ancestor::') 所有祖先节点
+//        html.xapth('//li'/attribute::) 获取所有的属性值
+//        html.xapth('//li/descendant::') 获取所有的子孙节点
+
+
+        //用id的xpath定位
+//        driver.findElement(By.xpath("//android.widget.LinearLayout[@resource-id='com.sankuai.meituan:id/search_layout']")).click();
+//        driver.findElement(By.xpath("//android.widget.EditText[@resource-id='com.sankuai.meituan:id/search_edit']")).sendKeys("2222");
+
+
+        //用child定位
+//        driver.findElement(By.xpath("//android.widget.LinearLayout[@resource-id='com.sankuai.meituan:id/search_layout']/child::android.widget.TextView[@resource-id='com.sankuai.meituan:id/search_edit']")).click();
+
+        //用parent定位
+//        driver.findElement(By.xpath("//android.widget.TextView[@resource-id='com.sankuai.meituan:id/search_edit']/parent::android.widget.LinearLayout[@resource-id='com.sankuai.meituan:id/search_layout']")).click();
+
+        //用ancestor定位,可以定位到爷爷辈，也可以定位到爷爷辈的爷爷辈，所有的祖先信息都可以
+//        driver.findElement(By.xpath("//android.widget.ImageView[@resource-id='com.sankuai.meituan:id/actionbar_scan_iv']/ancestor::android.widget.LinearLayout[@resource-id='com.sankuai.meituan:id/actionbar_scan_container']")).click();
+//        driver.findElement(By.xpath("//android.widget.ImageView[@resource-id='com.sankuai.meituan:id/actionbar_scan_iv']/ancestor::android.widget.LinearLayout[@resource-id='com.sankuai.meituan:id/navigation_bar_view']")).click();
+
+        //用descendant定位，可以定位到孙子辈的孙子辈以下的所有元素
+//        driver.findElement(By.xpath("//android.widget.LinearLayout[@resource-id='com.sankuai.meituan:id/navigation_bar_view']/descendant::android.widget.LinearLayout[@resource-id='com.sankuai.meituan:id/actionbar_scan_container']")).click();
+        driver.findElement(By.xpath("//android.widget.LinearLayout[@resource-id='com.sankuai.meituan:id/navigation_bar_view']/descendant::android.widget.RelativeLayout")).click();
+
+    }
+    //@Test(description = "练习css")
+    public void testcss(){
+
+//        driver.findElement(By.cssSelector("#com.sankuai.meituan:id/search_layout")).click();
+//        driver.findElement(By.cssSelector("#com.sankuai.meituan:id/search_edit")).sendKeys("2222");
+        driver.findElement(By.cssSelector("#resource-id='com.sankuai.meituan:id/search_layout'")).click();
+
+    }
+    //@Test(description = "设置输入法")
+    public void testime() throws InterruptedException {
+        //执行前改输入法为unicode
+        action.setimeforUnicode();
+
+        action.click(By.id(searchMerchantPage.searcheditid));
+        action.sendkeys(By.id(searchMerchantPage.searcheditid),"汉堡王");
+        Thread.sleep(1000);
+
+        //执行后改输入法为搜狗输入法
+        action.setimeforSougou();
+    }
+    @Test(description = "启动appium服务")
+    public void teststartappium() throws Exception {
+        //1、通过usb连接真机，启动模拟器，在cmd中输入adb devices查看有两台设备连接
+        //2、手动执行Servers中的main方法，通过命令行的方式启动两台设备的服务
+        //3、执行testng.xml配置thread-count=2，线程数为2，配置两个test信息，配置端口号和设备号等参数信息
+        action.click(By.id(searchMerchantPage.searcheditid));
+        action.sendkeys(By.id(searchMerchantPage.searcheditid),"222222");
+        Thread.sleep(1000);
+
+        Assert.assertEquals("1","1","断言成功");
+        action.Screenshot("测试截图001");
+        action.Screenshot("测试截图002");
+
+    }
+
+    @Test(description = "启动appium服务")
+    public void teststartappium2() throws Exception {
+        //1、通过usb连接真机，启动模拟器，在cmd中输入adb devices查看有两台设备连接
+        //2、手动执行Servers中的main方法，通过命令行的方式启动两台设备的服务
+        //3、执行testng.xml配置thread-count=2，线程数为2，配置两个test信息，配置端口号和设备号等参数信息
+        action.click(By.id(searchMerchantPage.searcheditid));
+        action.sendkeys(By.id(searchMerchantPage.searcheditid),"222222");
+        Thread.sleep(1000);
+
+        Assert.assertEquals("1","1","断言成功");
+        action.Screenshot("测试截图001");
+
+    }
+    @AfterMethod
+    public void teardown() throws InterruptedException {
+        driver.quit();
+        Thread.sleep(500);
     }
 
 }
