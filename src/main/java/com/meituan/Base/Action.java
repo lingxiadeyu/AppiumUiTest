@@ -414,16 +414,19 @@ public class Action {
             //如果不存在就创建一个目录
             new File(dir_name).mkdir();
         }
+
         //调用方法获取页面截屏
         File screenfile = androidDriver.getScreenshotAs(OutputType.FILE);
         //复制图片到指定目录,放到dir_name目录下，命名是时间戳+测试用例名称
         FileUtils.copyFile(screenfile,new File(dir_name+"\\"+dataString+ScreenName+".jpg"));
-        //打印图片名称,
-        System.out.println("测试截图名称:"+dir_name+"\\"+dataString+ScreenName+".jpg");
+        //图片名称
+        String photoname = dataString+ScreenName+".jpg";
+//        System.out.println("测试截图名称:"+dir_name+"\\"+dataString+ScreenName+".jpg");
 
         //把测试截图添加到测试报告中，通过jenkins查看报告
-        Reporter.log("<a href=http://localhost:8080/job/appiumTest/testimages/" +ScreenName+ " target=_blank>"+ScreenName+"</a>", true);
-        Reporter.log("<img src=http://localhost:8080/job/appiumTest/testimages/"+ScreenName+" style=width:30px;height:30px img/>", true);
+        http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-15-22-43测试截图kkkk.jpg
+        Reporter.log("<a href=http://localhost:8080/job/appiumTest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
+        Reporter.log("<img src=http://localhost:8080/job/appiumTest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
 
 
 //        Reporter.log("<a href=http://localhost:8080/jenkins/job/test/crazyappium/images/" + Thread.currentThread().getId()+fileName + " target=_blank>Failed Screen Shot</a>", true);

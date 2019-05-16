@@ -5,78 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29140ba5-82d2-4f28-8b1d-a2b17913e616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Base/CapabilitiesSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Server/Servers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Util/DosCmd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Util/IdcardUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Util/ImageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Util/RandomUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Util/SendMailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Util/XmlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testdata.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/meituan/ExecMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/meituan/TestDosCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hp/log/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hp/log/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hp/log/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hp/log/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Assert/MeiTuanAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Assert/MeiTuanAssert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Business/MeiTuanBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Business/MeiTuanBusiness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Util/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Util/ElementSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Util/ElementSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Util/ExtentTestNGIReporterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Util/ExtentTestNGIReporterListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Util/GetDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Base/GetDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Util/TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Base/TestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testdata.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testdata.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meituan/AppiumTestOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meituan/AppiumTestOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meituan/MeiShiPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meituan/MeiShiPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meituan/TestChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meituan/TestChromeDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yixin/testAppium/ContactsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yixin/testAppium/ContactsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meituan/Assert/MeiTuanAssert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/meituan/Assert/MeiTuanAssert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meituan/Business/MeiTuanBusiness.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/meituan/Business/MeiTuanBusiness.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meituan/Util/Action.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meituan/Util/ElementSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/meituan/Util/ElementSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meituan/Util/ExtentTestNGIReporterListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/meituan/Util/ExtentTestNGIReporterListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meituan/Util/GetDataProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/meituan/Util/TestSuite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testdata.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testdata.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.meituan.HomePageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.meituan.HomePageTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.meituan.MeiShiPageTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/reporter-output.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/reporter-output.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/执行移动端美团测试用例.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/执行移动端美团测试用例/执行移动端美团测试用例.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/执行移动端美团测试用例/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/执行移动端美团测试用例/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/执行移动端美团测试用例/执行移动端美团测试用例.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/执行移动端美团测试用例/执行移动端美团测试用例.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/执行移动端美团测试用例/执行移动端美团测试用例.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/执行移动端美团测试用例/执行移动端美团测试用例.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire/surefire8217395056815925863tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire/surefire8569430966618300273tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/meituan/AppiumTestOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/meituan/AppiumTestOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/meituan/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/meituan/HomePageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/meituan/MeiShiPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/meituan/MeiShiPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/meituan/TestChromeDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/meituan/TestChromeDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/meituan/Testmain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/meituan/Testmain$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/meituan/Testmain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/meituan/Testmain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/yixin/testAppium/ContactsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/yixin/testAppium/ContactsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -129,7 +58,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="47806" />
+          <entry key="java" value="47856" />
           <entry key="properties" value="199" />
           <entry key="xml" value="245" />
           <entry key="yaml" value="293" />
@@ -137,7 +66,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="47806" />
+          <entry key="JAVA" value="47856" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="Properties" value="199" />
           <entry key="XML" value="245" />
@@ -149,12 +78,12 @@
           <entry key="class" value="9" />
           <entry key="csv" value="2" />
           <entry key="html" value="1" />
-          <entry key="java" value="335" />
+          <entry key="java" value="337" />
           <entry key="jpg" value="19" />
           <entry key="js" value="1" />
-          <entry key="properties" value="12" />
-          <entry key="xml" value="38" />
-          <entry key="yaml" value="4" />
+          <entry key="properties" value="14" />
+          <entry key="xml" value="40" />
+          <entry key="yaml" value="5" />
           <entry key="yml" value="1" />
           <entry key="上传到git请先清空apps文件夹" value="1" />
         </counts>
@@ -164,66 +93,18 @@
           <entry key="CLASS" value="9" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="19" />
-          <entry key="JAVA" value="335" />
+          <entry key="JAVA" value="337" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="12" />
-          <entry key="XML" value="38" />
-          <entry key="YAML" value="5" />
+          <entry key="Properties" value="14" />
+          <entry key="XML" value="40" />
+          <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="359" column="64" selection-start-line="359" selection-start-column="64" selection-end-line="359" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="424" column="121" selection-start-line="424" selection-start-column="121" selection-end-line="424" selection-end-column="121" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="652" selection-start-line="652" selection-end-line="652" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/MeiShiPageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="132" column="2" selection-start-line="132" selection-start-column="2" selection-end-line="132" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng2.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -233,7 +114,55 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testdata.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/databaseConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="428" column="71" selection-start-line="428" selection-start-column="71" selection-end-line="428" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
@@ -243,48 +172,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/yixin/test/getdatabase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testdata.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Util/ExtentTestNGIReporterListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
               <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Server/Servers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="155" selection-start-line="155" selection-end-line="155" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/ExecMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1261#1269#0" expanded="true" />
-                <element signature="e#1621#1629#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Util/XmlUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="173" column="55" lean-forward="true" selection-start-line="173" selection-start-column="55" selection-end-line="173" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -360,12 +269,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/meituan/Server/ExecMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/meituan/Assert/MeiTuanAssert.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/meituan/ExecMain.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng2.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/meituan/Util/ExtentTestNGIReporterListener.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" />
       </list>
     </option>
   </component>
@@ -580,6 +489,14 @@
               <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -606,6 +523,25 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="meituan" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yixin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yixin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -619,7 +555,7 @@
     <property name="SearchEverywhereHistoryKey" value=")&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557997711551" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557998518819" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoTest/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -761,7 +697,7 @@
       <workItem from="1557193713082" duration="6145000" />
       <workItem from="1557208727007" duration="31320000" />
       <workItem from="1557453887951" duration="9085000" />
-      <workItem from="1557477997924" duration="101017000" />
+      <workItem from="1557477997924" duration="102040000" />
     </task>
     <servers />
   </component>
@@ -798,7 +734,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="798705000" />
+    <option name="totallyTimeSpent" value="799728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -813,7 +749,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4921466" visible="true" weight="0.21331316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4921466" visible="true" weight="0.034039333" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -928,13 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/yixin/test/getdatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Util/CreateIDCardNo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -986,20 +915,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/common-logging.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="74" selection-start-column="74" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/databaseConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1021,13 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1055,13 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testdata.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar!/javax/mail/Message.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1072,13 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="196" column="44" selection-start-line="196" selection-start-column="44" selection-end-line="196" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testdata.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1187,16 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="424" column="121" selection-start-line="424" selection-start-column="121" selection-end-line="424" selection-end-column="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/MeiShiPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1267,6 +1155,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="81" column="56" selection-start-line="81" selection-start-column="56" selection-end-line="81" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/yixin/test/getdatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testdata.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testdata.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/databaseConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="428" column="71" selection-start-line="428" selection-start-column="71" selection-end-line="428" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
