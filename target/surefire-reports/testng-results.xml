@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="执行移动端美团测试用例" duration-ms="29964" started-at="2019-04-17T11:53:55Z" finished-at="2019-04-17T11:54:25Z">
+  <suite name="Surefire suite" duration-ms="3" started-at="2019-05-20T01:56:52Z" finished-at="2019-05-20T01:56:52Z">
     <groups>
     </groups>
-    <test name="执行移动端美团测试用例" duration-ms="29964" started-at="2019-04-17T11:53:55Z" finished-at="2019-04-17T11:54:25Z">
-      <class name="com.meituan.HomePageTest">
-        <test-method status="PASS" signature="AndroidSettings()[pri:0, instance:com.meituan.HomePageTest@9f9fb0]" name="AndroidSettings" is-config="true" duration-ms="5718" started-at="2019-04-17T19:53:55Z" finished-at="2019-04-17T19:54:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AndroidSettings -->
-        <test-method status="PASS" signature="test001()[pri:0, instance:com.meituan.HomePageTest@9f9fb0]" name="test001" duration-ms="22193" started-at="2019-04-17T19:54:01Z" description="切换城市--选择热门城市" finished-at="2019-04-17T19:54:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test001 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.meituan.HomePageTest@9f9fb0]" name="teardown" is-config="true" duration-ms="2041" started-at="2019-04-17T19:54:23Z" finished-at="2019-04-17T19:54:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.meituan.HomePageTest -->
-    </test> <!-- 执行移动端美团测试用例 -->
-  </suite> <!-- 执行移动端美团测试用例 -->
+    <test name="Surefire test" duration-ms="3" started-at="2019-05-20T01:56:52Z" finished-at="2019-05-20T01:56:52Z">
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

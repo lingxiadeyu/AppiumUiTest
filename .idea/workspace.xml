@@ -5,9 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29140ba5-82d2-4f28-8b1d-a2b17913e616" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testng2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.meituan.Testmain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.meituan.Testmain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/suite/reporter-output.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/suite/reporter-output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/suite/98895a383037523351.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/suite/98895a383037523351.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/suite/98895a383037523351.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/suite/98895a383037523351.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-16-16-26-49测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-16-16-49-18测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-16-16-51-47测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-16-17-00-33测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-16-17-33-56测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-16-17-36-34测试头像截图.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,7 +84,7 @@
           <entry key="dummy" value="16" />
           <entry key="java" value="47856" />
           <entry key="properties" value="199" />
-          <entry key="xml" value="245" />
+          <entry key="xml" value="296" />
           <entry key="yaml" value="293" />
         </counts>
       </usages-collector>
@@ -71,7 +93,7 @@
           <entry key="JAVA" value="47856" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="Properties" value="199" />
-          <entry key="XML" value="245" />
+          <entry key="XML" value="296" />
           <entry key="YAML" value="293" />
         </counts>
       </usages-collector>
@@ -79,12 +101,12 @@
         <counts>
           <entry key="class" value="9" />
           <entry key="csv" value="2" />
-          <entry key="html" value="1" />
-          <entry key="java" value="339" />
+          <entry key="html" value="2" />
+          <entry key="java" value="340" />
           <entry key="jpg" value="19" />
           <entry key="js" value="1" />
           <entry key="properties" value="14" />
-          <entry key="xml" value="40" />
+          <entry key="xml" value="42" />
           <entry key="yaml" value="5" />
           <entry key="yml" value="1" />
           <entry key="上传到git请先清空apps文件夹" value="1" />
@@ -93,13 +115,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="9" />
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="2" />
           <entry key="Image" value="19" />
-          <entry key="JAVA" value="339" />
+          <entry key="JAVA" value="340" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="14" />
-          <entry key="XML" value="40" />
+          <entry key="XML" value="42" />
           <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
@@ -111,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="33">
-              <caret line="351" column="33" lean-forward="true" selection-start-line="351" selection-start-column="33" selection-end-line="351" selection-end-column="33" />
+              <caret line="351" column="33" selection-start-line="351" selection-start-column="33" selection-end-line="351" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,41 +141,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="594">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-output/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5835" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="154">
+              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testdata.yaml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="132">
+              <caret line="6" column="45" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -179,8 +199,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="428" column="71" selection-start-line="428" selection-start-column="71" selection-end-line="428" selection-end-column="71" />
+            <state relative-caret-position="208">
+              <caret line="417" column="20" selection-start-line="417" selection-start-column="20" selection-end-line="417" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,20 +208,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/yixin/test/getdatabase.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="-999">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testdata.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/ExecMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="186">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1261#1269#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -277,12 +301,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/meituan/Server/ExecMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/meituan/Assert/MeiTuanAssert.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/meituan/ExecMain.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/testng2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/meituan/Util/ExtentTestNGIReporterListener.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/testng2.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -402,7 +426,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1362" />
@@ -563,7 +587,7 @@
     <property name="SearchEverywhereHistoryKey" value=")&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557999764688" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558317235440" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoTest/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -705,14 +729,11 @@
       <workItem from="1557193713082" duration="6145000" />
       <workItem from="1557208727007" duration="31320000" />
       <workItem from="1557453887951" duration="9085000" />
-      <workItem from="1557477997924" duration="102955000" />
+      <workItem from="1557477997924" duration="107016000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__Springboot_AppiumTest_src_main_resources_testng2_xml - 2019.05.16 at 16h 08m 45s.xml">
-      <configuration name="D:/Springboot/AppiumTest/src/main/resources/testng2.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="D__Springboot_AppiumTest_src_main_resources_testng2_xml - 2019.05.16 at 16h 10m 53s.xml">
       <configuration name="D:/Springboot/AppiumTest/src/main/resources/testng2.xml" configurationId="TestNG" />
     </history-entry>
@@ -740,9 +761,12 @@
     <history-entry file="D__Springboot_AppiumTest_src_main_resources_testng2_xml - 2019.05.16 at 17h 36m 44s.xml">
       <configuration name="D:/Springboot/AppiumTest/src/main/resources/testng2.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="D__Springboot_AppiumTest_src_main_resources_testng2_xml - 2019.05.20 at 09h 48m 12s.xml">
+      <configuration name="D:/Springboot/AppiumTest/src/main/resources/testng2.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="800643000" />
+    <option name="totallyTimeSpent" value="804704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,10 +778,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4921466" visible="true" weight="0.2579425" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4921466" visible="true" weight="0.22692889" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -766,7 +789,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32840723" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.7586207" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.72577995" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3957307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -774,7 +797,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32840723" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6863711" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6863711" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.8029557" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32840723" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -826,16 +849,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/TestChromeDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-805">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Pages/HomePages/SearchMerchantPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1059,13 +1072,6 @@
     <entry file="file://$PROJECT_DIR$/test-output/junitreports/TEST-com.meituan.Testmain.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -1103,18 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/ExecMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1261#1269#0" expanded="true" />
-            <element signature="e#1621#1629#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Util/XmlUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -1129,13 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="81" column="56" selection-start-line="81" selection-start-column="56" selection-end-line="81" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1181,27 +1168,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="428" column="71" selection-start-line="428" selection-start-column="71" selection-end-line="428" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
-          <caret line="351" column="33" lean-forward="true" selection-start-line="351" selection-start-column="33" selection-end-line="351" selection-end-column="33" />
+          <caret line="351" column="33" selection-start-line="351" selection-start-column="33" selection-end-line="351" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1211,10 +1181,57 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5835" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="417" column="20" selection-start-line="417" selection-start-column="20" selection-end-line="417" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/ExecMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1261#1269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-999">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>

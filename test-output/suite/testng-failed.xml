@@ -11,6 +11,7 @@
     <parameter name="udid" value="98895a383037523351"/>
     <classes>
       <class name="com.meituan.Testmain"/>
+      <class name="com.meituan.HomePageTest"/>
     </classes>
   </test> <!-- 98895a383037523351 -->
 </suite> <!-- Failed suite [suite] -->

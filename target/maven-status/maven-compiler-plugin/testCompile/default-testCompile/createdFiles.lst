@@ -1,3 +1,4 @@
+com\meituan\TestDosCmd.class
 com\meituan\Testmain.class
 com\meituan\TestChromeDriver.class
 com\meituan\MeiShiPageTest.class
@@ -5,5 +6,6 @@ com\yixin\test\getdatabase.class
 com\meituan\HomePageTest.class
 com\meituan\testlog.class
 com\yixin\testAppium\ContactsTest.class
+com\meituan\ExecMain.class
 com\meituan\AppiumTestOne.class
 com\meituan\Testmain$1.class

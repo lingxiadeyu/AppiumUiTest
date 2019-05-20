@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[<a href=http://localhost:8080/job/appiumTest/testimages/测试截图kkkk target=_blank>Screen Shot</a>]]>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-58-41001.jpg target=_blank>2019-05-16-19-58-41001.jpg</a>]]>
     </line>
     <line>
-      <![CDATA[<img src=http://localhost:8080/job/appiumTest/testimages/测试截图kkkk style=width:30px;height:30px img/>]]>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-58-41001.jpg style=width:30px;height:30px img/>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-58-44002.jpg target=_blank>2019-05-16-19-58-44002.jpg</a>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-58-44002.jpg style=width:30px;height:30px img/>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-59-16测试截图001.jpg target=_blank>2019-05-16-19-59-16测试截图001.jpg</a>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-59-16测试截图001.jpg style=width:30px;height:30px img/>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-59-42001.jpg target=_blank>2019-05-16-19-59-42001.jpg</a>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-59-42001.jpg style=width:30px;height:30px img/>]]>
     </line>
   </reporter-output>
-  <suite name="suite" duration-ms="35081" started-at="2019-05-16T08:04:40Z" finished-at="2019-05-16T08:05:15Z">
+  <suite name="suite" duration-ms="101218" started-at="2019-05-16T11:58:14Z" finished-at="2019-05-16T11:59:56Z">
     <groups>
     </groups>
-    <test name="98895a383037523351" duration-ms="35081" started-at="2019-05-16T08:04:40Z" finished-at="2019-05-16T08:05:15Z">
-      <class name="com.meituan.Testmain">
-        <test-method status="PASS" signature="AndroidSettings(java.lang.String, java.lang.String)[pri:0, instance:com.meituan.Testmain@fd02e5]" name="AndroidSettings" is-config="true" duration-ms="12244" started-at="2019-05-16T16:04:40Z" finished-at="2019-05-16T16:04:52Z">
+    <test name="98895a383037523351" duration-ms="101218" started-at="2019-05-16T11:58:14Z" finished-at="2019-05-16T11:59:56Z">
+      <class name="com.meituan.HomePageTest">
+        <test-method status="PASS" signature="AndroidSettings(java.lang.String, java.lang.String)[pri:0, instance:com.meituan.HomePageTest@45f292]" name="AndroidSettings" is-config="true" duration-ms="11341" started-at="2019-05-16T19:59:23Z" finished-at="2019-05-16T19:59:34Z">
           <params>
             <param index="0">
               <value>
@@ -29,17 +47,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AndroidSettings -->
-        <test-method status="PASS" signature="teststartappium()[pri:0, instance:com.meituan.Testmain@fd02e5]" name="teststartappium" duration-ms="19048" started-at="2019-05-16T16:04:52Z" description="启动appium服务" finished-at="2019-05-16T16:05:11Z">
+        <test-method status="PASS" signature="test001()[pri:0, instance:com.meituan.HomePageTest@45f292]" name="test001" duration-ms="17263" started-at="2019-05-16T19:59:34Z" description="切换城市--选择热门城市" finished-at="2019-05-16T19:59:51Z">
           <reporter-output>
             <line>
-              <![CDATA[<a href=http://localhost:8080/job/appiumTest/testimages/测试截图kkkk target=_blank>Screen Shot</a>]]>
+              <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-59-42001.jpg target=_blank>2019-05-16-19-59-42001.jpg</a>]]>
             </line>
             <line>
-              <![CDATA[<img src=http://localhost:8080/job/appiumTest/testimages/测试截图kkkk style=width:30px;height:30px img/>]]>
+              <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-59-42001.jpg style=width:30px;height:30px img/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test001 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.meituan.HomePageTest@45f292]" name="teardown" is-config="true" duration-ms="4274" started-at="2019-05-16T19:59:51Z" finished-at="2019-05-16T19:59:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.meituan.HomePageTest -->
+      <class name="com.meituan.Testmain">
+        <test-method status="PASS" signature="AndroidSettings(java.lang.String, java.lang.String)[pri:0, instance:com.meituan.Testmain@1cab519]" name="AndroidSettings" is-config="true" duration-ms="14096" started-at="2019-05-16T19:58:14Z" finished-at="2019-05-16T19:58:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[98895a383037523351]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AndroidSettings -->
+        <test-method status="PASS" signature="teststartappium()[pri:0, instance:com.meituan.Testmain@1cab519]" name="teststartappium" duration-ms="18148" started-at="2019-05-16T19:58:29Z" description="启动appium服务" finished-at="2019-05-16T19:58:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-58-41001.jpg target=_blank>2019-05-16-19-58-41001.jpg</a>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-58-41001.jpg style=width:30px;height:30px img/>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-58-44002.jpg target=_blank>2019-05-16-19-58-44002.jpg</a>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-58-44002.jpg style=width:30px;height:30px img/>]]>
             </line>
           </reporter-output>
         </test-method> <!-- teststartappium -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.meituan.Testmain@fd02e5]" name="teardown" is-config="true" duration-ms="3771" started-at="2019-05-16T16:05:11Z" finished-at="2019-05-16T16:05:15Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.meituan.Testmain@1cab519]" name="teardown" is-config="true" duration-ms="4102" started-at="2019-05-16T19:58:47Z" finished-at="2019-05-16T19:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="AndroidSettings(java.lang.String, java.lang.String)[pri:0, instance:com.meituan.Testmain@1cab519]" name="AndroidSettings" is-config="true" duration-ms="10865" started-at="2019-05-16T19:58:51Z" finished-at="2019-05-16T19:59:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[98895a383037523351]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AndroidSettings -->
+        <test-method status="PASS" signature="teststartappium2()[pri:0, instance:com.meituan.Testmain@1cab519]" name="teststartappium2" duration-ms="16966" started-at="2019-05-16T19:59:02Z" description="启动appium服务" finished-at="2019-05-16T19:59:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-59-16测试截图001.jpg target=_blank>2019-05-16-19-59-16测试截图001.jpg</a>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-19-59-16测试截图001.jpg style=width:30px;height:30px img/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teststartappium2 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.meituan.Testmain@1cab519]" name="teardown" is-config="true" duration-ms="4143" started-at="2019-05-16T19:59:19Z" finished-at="2019-05-16T19:59:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
