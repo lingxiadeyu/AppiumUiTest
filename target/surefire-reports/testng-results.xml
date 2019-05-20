@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-20-14-16-49001.jpg target=_blank>2019-05-20-14-16-49001.jpg</a>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-20-14-16-49001.jpg style=width:30px;height:30px img/>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-20-14-16-51002.jpg target=_blank>2019-05-20-14-16-51002.jpg</a>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-20-14-16-51002.jpg style=width:30px;height:30px img/>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-20-14-17-20测试截图001.jpg target=_blank>2019-05-20-14-17-20测试截图001.jpg</a>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-20-14-17-20测试截图001.jpg style=width:30px;height:30px img/>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-20-14-17-44001.jpg target=_blank>2019-05-20-14-17-44001.jpg</a>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=http://localhost:8080/job/appiumTest/ws/testimages/2019-05-20-14-17-44001.jpg style=width:30px;height:30px img/>]]>
+    </line>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="3" started-at="2019-05-20T01:56:52Z" finished-at="2019-05-20T01:56:52Z">
+  <suite name="Surefire suite" duration-ms="117929" started-at="2019-05-20T06:16:02Z" finished-at="2019-05-20T06:18:00Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="3" started-at="2019-05-20T01:56:52Z" finished-at="2019-05-20T01:56:52Z">
+    <test name="Surefire test" duration-ms="117929" started-at="2019-05-20T06:16:02Z" finished-at="2019-05-20T06:18:00Z">
+      <class name="ExecMain">
+        <test-method status="PASS" signature="testexec()[pri:0, instance:ExecMain@109b8da]" name="testexec" duration-ms="117921" started-at="2019-05-20T14:16:02Z" description="一键启动" finished-at="2019-05-20T14:18:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testexec -->
+      </class> <!-- ExecMain -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

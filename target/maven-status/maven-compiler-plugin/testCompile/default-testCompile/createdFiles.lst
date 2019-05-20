@@ -6,6 +6,6 @@ com\yixin\test\getdatabase.class
 com\meituan\HomePageTest.class
 com\meituan\testlog.class
 com\yixin\testAppium\ContactsTest.class
-com\meituan\ExecMain.class
+ExecMain.class
 com\meituan\AppiumTestOne.class
 com\meituan\Testmain$1.class

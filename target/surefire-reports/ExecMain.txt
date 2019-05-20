@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.meituan.ExecMain
+Test set: ExecMain
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 sec - in com.meituan.ExecMain
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 118.326 sec - in ExecMain

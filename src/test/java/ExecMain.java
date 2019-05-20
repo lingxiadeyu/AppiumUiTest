@@ -1,9 +1,8 @@
-package com.meituan;
-
 import com.meituan.Server.Servers;
 import com.meituan.Util.SendMailUtil;
 import com.meituan.Util.XmlUtil;
 import org.testng.TestNG;
+import org.testng.annotations.Test;
 
 import javax.mail.MessagingException;
 import java.io.IOException;
@@ -18,7 +17,8 @@ public class ExecMain {
 
 //    private static String path = System.getProperty("user.dir");
 
-    public static void main(String[] args) throws IOException, InterruptedException, MessagingException {
+    @Test(description = "一键启动")
+    public void testexec() throws IOException, InterruptedException, MessagingException {
         Servers servers = new Servers();
         SendMailUtil sendMailUtil = new SendMailUtil();
         XmlUtil xmlUtil = new XmlUtil();

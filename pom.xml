@@ -27,7 +27,7 @@
             <!--</suiteXmlFiles>-->
             <!--</configuration>-->
             <!--</plugin>-->
-            <!--maven命令测试java测试类-->
+            <!--maven命令执行testng的java测试类-->
             <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -35,7 +35,7 @@
             <configuration>
             <forkMode>once</forkMode>
             <argLine>-Dfile.encoding=UTF-8</argLine><!-- 解决读取测试数据时的中文乱码问题 -->
-            <!--只能运行在test目录下的类-->
+            <!--只能运行在test目录下的类,且必须为有@test标签的类，有main方法的类不行，会提示没有主方法类-->
             <includes>
             <include>
             ExecMain.java
@@ -100,6 +100,38 @@
                     <!--<source>6</source>-->
                     <!--<target>6</target>-->
                 <!--</configuration>-->
+            <!--</plugin>-->
+            <!--maven命令执行有main方法的测试类-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-compiler-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<source>1.8</source>-->
+                    <!--<target>1.8</target>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<artifactId>maven-assembly-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<archive>-->
+                        <!--<manifest>-->
+                            <!--<mainClass>com.meituan.testlog</mainClass>-->
+                        <!--</manifest>-->
+                    <!--</archive>-->
+                    <!--<descriptorRefs>-->
+                        <!--<descriptorRef>jar-with-dependencies</descriptorRef>-->
+                    <!--</descriptorRefs>-->
+                <!--</configuration>-->
+                <!--&lt;!&ndash;下面是为了使用 mvn package命令，如果不加则使用mvn assembly&ndash;&gt;-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>make-assemble</id>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>single</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
             <!--</plugin>-->
         </plugins>
     </build>
