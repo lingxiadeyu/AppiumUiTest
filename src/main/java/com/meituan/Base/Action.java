@@ -423,14 +423,15 @@ public class Action {
         String photoname = dataString+ScreenName+".jpg";
 //        System.out.println("测试截图名称:"+dir_name+"\\"+dataString+ScreenName+".jpg");
 
-        //把测试截图添加到测试报告中，通过jenkins查看报告
-        http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-15-22-43测试截图kkkk.jpg
+        //把测试截图添加到测试报告中，通过本地jenkins查看报告
+        //http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-15-22-43测试截图kkkk.jpg
+//        Reporter.log("<a href=http://localhost:8080/job/appiumTest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
+//        Reporter.log("<img src=http://localhost:8080/job/appiumTest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
+
+        //把测试截图添加到测试报告中，通过服务器上的jenkins查看报告
+        //http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-15-22-43测试截图kkkk.jpg
         Reporter.log("<a href=http://localhost:8080/job/appiumTest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
         Reporter.log("<img src=http://localhost:8080/job/appiumTest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
-
-
-//        Reporter.log("<a href=http://localhost:8080/jenkins/job/test/crazyappium/images/" + Thread.currentThread().getId()+fileName + " target=_blank>Failed Screen Shot</a>", true);
-//        Reporter.log("<img src=http://localhost:8080/jenkins/job/test/crazyappium/images/"+Thread.currentThread().getId()+fileName +" style=width:30px;height:30px img/>", true);
 
     }
 

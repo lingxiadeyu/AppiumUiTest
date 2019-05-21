@@ -1,0 +1,2 @@
+1、在本地jenkins中可以使用执行Execmain类实现一键启动
+2、在linux中使用执行testng.xml的方式去执行测试类
