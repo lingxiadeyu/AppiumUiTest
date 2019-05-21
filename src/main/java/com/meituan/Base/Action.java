@@ -429,9 +429,9 @@ public class Action {
 //        Reporter.log("<img src=http://localhost:8080/job/appiumTest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
 
         //把测试截图添加到测试报告中，通过服务器上的jenkins查看报告
-        //http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-15-22-43测试截图kkkk.jpg
-        Reporter.log("<a href=http://localhost:8080/job/appiumTest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
-        Reporter.log("<img src=http://localhost:8080/job/appiumTest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
+        //http://192.168.44.129:8080/job/appiumtest/ws/testimages/2019-05-16-17-32-51%E6%B5%8B%E8%AF%95%E6%88%AA%E5%9B%BE001.jpg
+        Reporter.log("<a href=http://192.168.44.129:8080/job/appiumtest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
+        Reporter.log("<img src=http://192.168.44.129:8080/job/appiumtest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
 
     }
 

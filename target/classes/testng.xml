@@ -5,6 +5,7 @@
         <parameter name="port" value="4723"/>
         <classes>
             <class name="com.meituan.Testmain"/>
+            <class name="com.meituan.HomePageTest"/>
         </classes>
     </test>
     <!--<test name="192.168.215.101:5555">-->
