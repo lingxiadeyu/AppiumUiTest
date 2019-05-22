@@ -421,7 +421,7 @@ public class Action {
         FileUtils.copyFile(screenfile,new File(dir_name+"\\"+dataString+ScreenName+".jpg"));
         //图片名称
         String photoname = dataString+ScreenName+".jpg";
-        Reporter.log("测试截图地址:"+dir_name+"\\"+dataString+ScreenName+".jpg");
+        System.out.println("测试截图地址:"+dir_name+"\\"+dataString+ScreenName+".jpg");
 
         //把测试截图添加到测试报告中，通过本地jenkins查看报告
         //http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-15-22-43测试截图kkkk.jpg
