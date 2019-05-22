@@ -408,7 +408,9 @@ public class Action {
         //生成时间戳
         String dataString = simpleDateFormat.format(new Date());
         //设置存放图片目录
-        String dir_name = System.getProperty("user.dir")+"\\testimages";
+//        String dir_name = System.getProperty("user.dir")+"\\testimages";
+        //在linux中路径和windows路径不一样
+        String dir_name = System.getProperty("user.dir")+"/testimages";
         //防止出现图片目录被删除，所以先判断目录是否存在，如果不存在就新建一个目录
         if (!(new File(dir_name).isDirectory())){
             //如果不存在就创建一个目录
@@ -418,10 +420,11 @@ public class Action {
         //调用方法获取页面截屏
         File screenfile = androidDriver.getScreenshotAs(OutputType.FILE);
         //复制图片到指定目录,放到dir_name目录下，命名是时间戳+测试用例名称
-        FileUtils.copyFile(screenfile,new File(dir_name+"\\"+dataString+ScreenName+".jpg"));
+//        FileUtils.copyFile(screenfile,new File(dir_name+"\\"+dataString+ScreenName+".jpg"));
+        FileUtils.copyFile(screenfile,new File(dir_name+"/"+dataString+ScreenName+".jpg"));
         //图片名称
         String photoname = dataString+ScreenName+".jpg";
-        System.out.println("测试截图地址:"+dir_name+"\\"+dataString+ScreenName+".jpg");
+        System.out.println("测试截图地址:"+dir_name+"/"+dataString+ScreenName+".jpg");
 
         //把测试截图添加到测试报告中，通过本地jenkins查看报告
         //http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-15-22-43测试截图kkkk.jpg
