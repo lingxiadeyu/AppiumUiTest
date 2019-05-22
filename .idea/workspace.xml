@@ -4,48 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java" description="            //判断暂无订单&#10;            Assert.assertTrue..." line="545" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29140ba5-82d2-4f28-8b1d-a2b17913e616" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-32-51测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-32-54测试截图002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-33-26测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-33-51测试编号001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-35-29001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-35-32002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-36-06测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-36-29001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-19-58-41001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-19-58-44002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-19-59-16测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-19-59-42001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-09-46-55001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-09-46-58002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-09-47-31测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-09-47-56001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-12-52-30001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-12-52-33002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-12-53-03测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-12-53-31001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-14-16-49001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-14-16-51002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-14-17-20测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-14-17-44001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-15-55-31001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-15-55-32002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-15-56-07测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-15-56-33001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-16-05-15001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-16-05-17002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-16-05-48测试截图001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-16-06-13001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-16-19-59-46测试头像截图.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-20-09-48-01测试头像截图.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-20-12-53-36测试头像截图.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-20-14-17-48测试头像截图.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-21-15-56-35测试头像截图.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-21-16-06-17测试头像截图.png" beforeDir="false" />
-    </list>
+    <list default="true" id="29140ba5-82d2-4f28-8b1d-a2b17913e616" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -169,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="435" column="5" lean-forward="true" selection-start-line="435" selection-start-column="5" selection-end-line="435" selection-end-column="5" />
+            <state relative-caret-position="427">
+              <caret line="433" column="75" lean-forward="true" selection-start-line="433" selection-start-column="75" selection-end-line="433" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -377,121 +336,6 @@
               <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="meituan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="meituan" type="462c0819:PsiDirectoryNode" />
-              <item name="Assert" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="meituan" type="462c0819:PsiDirectoryNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="meituan" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="meituan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -502,7 +346,7 @@
     <property name="SearchEverywhereHistoryKey" value=")&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558514439842" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558515007880" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoTest/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -639,7 +483,7 @@
       <workItem from="1557208727007" duration="31320000" />
       <workItem from="1557453887951" duration="9085000" />
       <workItem from="1557477997924" duration="114167000" />
-      <workItem from="1558332422646" duration="14227000" />
+      <workItem from="1558332422646" duration="14795000" />
     </task>
     <servers />
   </component>
@@ -676,7 +520,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="826082000" />
+    <option name="totallyTimeSpent" value="826650000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,7 +533,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4921466" visible="true" weight="0.23600605" />
       <window_info id="Image Layers" order="1" />
@@ -1123,8 +966,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="435" column="5" lean-forward="true" selection-start-line="435" selection-start-column="5" selection-end-line="435" selection-end-column="5" />
+        <state relative-caret-position="427">
+          <caret line="433" column="75" lean-forward="true" selection-start-line="433" selection-start-column="75" selection-end-line="433" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
