@@ -6,7 +6,45 @@
   <component name="ChangeListManager">
     <list default="true" id="29140ba5-82d2-4f28-8b1d-a2b17913e616" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-32-51测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-32-54测试截图002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-33-26测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-33-51测试编号001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-35-29001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-35-32002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-36-06测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-17-36-29001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-19-58-41001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-19-58-44002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-19-59-16测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-16-19-59-42001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-09-46-55001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-09-46-58002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-09-47-31测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-09-47-56001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-12-52-30001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-12-52-33002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-12-53-03测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-12-53-31001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-14-16-49001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-14-16-51002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-14-17-20测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-20-14-17-44001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-15-55-31001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-15-55-32002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-15-56-07测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-15-56-33001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-16-05-15001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-16-05-17002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-16-05-48测试截图001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testimages/2019-05-21-16-06-13001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-16-19-59-46测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-20-09-48-01测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-20-12-53-36测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-20-14-17-48测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-21-15-56-35测试头像截图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试截图/2019-05-21-16-06-17测试头像截图.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,7 +97,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="47941" />
+          <entry key="java" value="47967" />
           <entry key="properties" value="199" />
           <entry key="xml" value="499" />
           <entry key="yaml" value="293" />
@@ -68,7 +106,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="47941" />
+          <entry key="JAVA" value="47967" />
           <entry key="PLAIN_TEXT" value="92" />
           <entry key="Properties" value="199" />
           <entry key="XML" value="499" />
@@ -128,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="471">
               <caret line="435" column="5" lean-forward="true" selection-start-line="435" selection-start-column="5" selection-end-line="435" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -170,11 +208,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+            <state relative-caret-position="295">
+              <caret line="245" column="62" lean-forward="true" selection-start-line="245" selection-start-column="62" selection-end-line="245" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -182,8 +220,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="672" column="5" lean-forward="true" selection-start-line="672" selection-start-column="5" selection-end-line="672" selection-end-column="5" />
+            <state relative-caret-position="242">
+              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -289,9 +327,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/meituan/ExecMain.java" />
         <option value="$PROJECT_DIR$/上传到git请先清空apps文件夹" />
         <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/meituan/Base/TestSuite.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java" />
       </list>
     </option>
   </component>
@@ -464,7 +502,7 @@
     <property name="SearchEverywhereHistoryKey" value=")&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558491109372" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558514439842" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoTest/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -601,7 +639,7 @@
       <workItem from="1557208727007" duration="31320000" />
       <workItem from="1557453887951" duration="9085000" />
       <workItem from="1557477997924" duration="114167000" />
-      <workItem from="1558332422646" duration="11783000" />
+      <workItem from="1558332422646" duration="14227000" />
     </task>
     <servers />
   </component>
@@ -638,7 +676,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="823638000" />
+    <option name="totallyTimeSpent" value="826082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1046,6 +1084,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="245" column="62" lean-forward="true" selection-start-line="245" selection-start-column="62" selection-end-line="245" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/Testmain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -1058,8 +1103,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/meituan/HomePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="672" column="5" lean-forward="true" selection-start-line="672" selection-start-column="5" selection-end-line="672" selection-end-column="5" />
+        <state relative-caret-position="242">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1078,18 +1123,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
+        <state relative-caret-position="471">
           <caret line="435" column="5" lean-forward="true" selection-start-line="435" selection-start-column="5" selection-end-line="435" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
         </state>
       </provider>
     </entry>
