@@ -56,7 +56,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="47967" />
+          <entry key="java" value="47990" />
           <entry key="properties" value="199" />
           <entry key="xml" value="499" />
           <entry key="yaml" value="293" />
@@ -65,7 +65,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="47967" />
+          <entry key="JAVA" value="47990" />
           <entry key="PLAIN_TEXT" value="92" />
           <entry key="Properties" value="199" />
           <entry key="XML" value="499" />
@@ -128,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="433" column="75" lean-forward="true" selection-start-line="433" selection-start-column="75" selection-end-line="433" selection-end-column="75" />
+            <state relative-caret-position="132">
+              <caret line="416" lean-forward="true" selection-start-line="416" selection-end-line="416" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -346,7 +346,7 @@
     <property name="SearchEverywhereHistoryKey" value=")&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558515007880" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558515185526" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoTest/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -483,7 +483,7 @@
       <workItem from="1557208727007" duration="31320000" />
       <workItem from="1557453887951" duration="9085000" />
       <workItem from="1557477997924" duration="114167000" />
-      <workItem from="1558332422646" duration="14795000" />
+      <workItem from="1558332422646" duration="15283000" />
     </task>
     <servers />
   </component>
@@ -520,7 +520,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="826650000" />
+    <option name="totallyTimeSpent" value="827138000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,6 +533,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4921466" visible="true" weight="0.23600605" />
       <window_info id="Image Layers" order="1" />
@@ -966,8 +967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/Base/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="433" column="75" lean-forward="true" selection-start-line="433" selection-start-column="75" selection-end-line="433" selection-end-column="75" />
+        <state relative-caret-position="132">
+          <caret line="416" lean-forward="true" selection-start-line="416" selection-end-line="416" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
