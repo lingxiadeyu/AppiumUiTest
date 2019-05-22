@@ -9,6 +9,7 @@ import com.lowagie.text.*;
 import com.lowagie.text.pdf.BaseFont;
 import com.lowagie.text.rtf.RtfWriter2;
 import com.meituan.Util.DosCmd;
+import com.meituan.Util.ElementSource;
 import io.appium.java_client.SwipeElementDirection;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -37,6 +38,7 @@ public class Action {
 
     public AndroidDriver androidDriver;
     public TouchAction touchAction;
+    public ElementSource elementSource;
 
     public Action(AndroidDriver androidDriver) {
         this.androidDriver = androidDriver;
@@ -403,6 +405,7 @@ public class Action {
 
     //截取全屏操作
     public  void Screenshot(String ScreenName) throws IOException {
+
         //设置时间格式，截图的文件要加上时间戳这样不会重复
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
         //生成时间戳
@@ -428,13 +431,13 @@ public class Action {
 
         //把测试截图添加到测试报告中，通过本地jenkins查看报告
         //http://localhost:8080/job/appiumTest/ws/testimages/2019-05-16-15-22-43测试截图kkkk.jpg
-//        Reporter.log("<a href=http://localhost:8080/job/appiumTest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
-//        Reporter.log("<img src=http://localhost:8080/job/appiumTest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
+        Reporter.log("<a href=http://"+elementSource.getElementsource("JenkinsServerIp")+":8080/job/appiumtest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
+        Reporter.log("<img src=http://"+elementSource.getElementsource("JenkinsServerIp")+":8080/job/appiumtest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
 
         //把测试截图添加到测试报告中，通过服务器上的jenkins查看报告
         //http://192.168.44.129:8080/job/appiumtest/ws/testimages/2019-05-16-17-32-51%E6%B5%8B%E8%AF%95%E6%88%AA%E5%9B%BE001.jpg
-        Reporter.log("<a href=http://192.168.44.129:8080/job/appiumtest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
-        Reporter.log("<img src=http://192.168.44.129:8080/job/appiumtest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
+//        Reporter.log("<a href=http://192.168.44.129:8080/job/appiumtest/ws/testimages/" +photoname+ " target=_blank>"+photoname+"</a>", true);
+//        Reporter.log("<img src=http://192.168.44.129:8080/job/appiumtest/ws/testimages/"+photoname+" style=width:30px;height:30px img/>", true);
 
     }
 

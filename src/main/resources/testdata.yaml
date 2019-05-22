@@ -22,3 +22,6 @@ senderusername: jettech_qinzx@sina.com
 senderpassword: Qin777QQ
 sender : jettech_qinzx@sina.com
 receiver : jettech_qinzx@sina.com;qihua_sun@sina.com
+#---------------------------本地环境和服务器环境--------------------
+# 192.168.44.129
+JenkinsServerIp : 127.0.0.1
