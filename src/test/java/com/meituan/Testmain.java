@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Testmain extends TestSuite {
+public class Testmain extends TestSuite{
     private static Log logger = LogFactory.getLog(Testmain.class);
 
 
@@ -106,26 +106,27 @@ public class Testmain extends TestSuite {
 
 //    @Test
     public void testwebdriver() throws MalformedURLException, InterruptedException {
-        AppiumDriver<WebElement> driver;
+        AndroidDriver<WebElement> driver;
 
-        //获取当前根目录下的文件，当前根目录就是D:\Springboot\MyApplicationthree,项目名是MyApplicationthree
-        File classpathRoot = new File(System.getProperty("user.dir"));
-        //获取apps目录下的文件
-        File appDir = new File(classpathRoot, "/apps");
-        //获取蘑菇智行.apk，需要提前把该apk放到apps文件夹下
-        File app = new File(appDir, "meituan-9.11.601.apk");
+//        //获取当前根目录下的文件，当前根目录就是D:\Springboot\MyApplicationthree,项目名是MyApplicationthree
+//        File classpathRoot = new File(System.getProperty("user.dir"));
+//        //获取apps目录下的文件
+//        File appDir = new File(classpathRoot, "/apps");
+//        //获取蘑菇智行.apk，需要提前把该apk放到apps文件夹下
+//        File app = new File(appDir, "meituan-9.11.601.apk");
 
         //创建设备属性对象
         DesiredCapabilities capabilities = new DesiredCapabilities();
         //设置设备系统为Android
         capabilities.setCapability("platformName", "Android");
         //设置设备名称为PBVGK16918902121，可以通过usb连接手机，在cmd中输入命令，adb devices 看到设备名称
-        capabilities.setCapability("deviceName","PBVGK16918902121");
+        capabilities.setCapability("deviceName","edaed87d");
         //设置设备安卓系统，可以在手机的设置中查看系统号
         capabilities.setCapability("platformVersion", "8.0.0");
+        capabilities.setCapability("udid","edaed87d");
 
         //获取app的绝对路径
-        capabilities.setCapability("app", app.getAbsolutePath());
+//        capabilities.setCapability("app", app.getAbsolutePath());
         //设置app的包名，通过usb连接手机，在手机中打开app，在cmd中输入命令adb shell dumpsys window | findstr mCurrentFocus 查看包名
         capabilities.setCapability("appPackage", "com.sankuai.meituan");
         //设置app的入口，通过反编译可以查到该值，参考apk反编译文档获取该值
@@ -143,17 +144,21 @@ public class Testmain extends TestSuite {
         System.out.println("App is launched!");
 
 
-        Thread.sleep(5000);
-        while(true){
-            try {
-                driver.findElement(By.name("老城一锅（小关店）"));
-                break;
-            }catch (Exception e){
-                driver.swipe(540,448,540,344,500);
-            }
-        }
-        Thread.sleep(1000);
-        driver.findElement(By.name("老城一锅（小关店）")).click();
+
+        driver.findElement(By.id("com.sankuai.meituan:id/search_edit"));
+        driver.findElement(By.id("com.sankuai.meituan:id/search_edit")).sendKeys("22222");
+
+//        Thread.sleep(5000);
+//        while(true){
+//            try {
+//                driver.findElement(By.name("老城一锅（小关店）"));
+//                break;
+//            }catch (Exception e){
+//                driver.swipe(540,448,540,344,500);
+//            }
+//        }
+//        Thread.sleep(1000);
+//        driver.findElement(By.name("老城一锅（小关店）")).click();
 
     }
 

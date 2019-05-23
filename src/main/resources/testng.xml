@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite name="执行移动端美团测试用例" parallel="tests" thread-count="2">
-    <test name="98895a383037523351">
-        <parameter name="udid" value="98895a383037523351"/>
+    <test name="edaed87d">
+        <parameter name="udid" value="edaed87d"/>
         <parameter name="port" value="4723"/>
         <classes>
             <class name="com.meituan.Testmain"/>
